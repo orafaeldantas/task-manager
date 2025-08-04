@@ -162,3 +162,26 @@ textarea:focus, input:focus {
     box-shadow: 0 0 0 3px rgba(136, 136, 136, 0.25);
 }
 
+.container-logout {
+  display: flex;
+  justify-content: flex-end; /* Alinha o conteúdo (o botão) à direita */
+  align-items: center; /* Centraliza verticalmente se o contêiner tiver altura */
+  width: 100%; /* Garante que o contêiner ocupe a largura total */
+  padding: 10px; /* Um pouco de espaço em volta, se desejar */
+}
+
+#btn-logout {
+  background-color: #dc3545; /* Vermelho para indicar logout */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Efeito de transição suave */
+}
+
+#btn-logout:hover {
+  background-color: #c82333; /* Cor mais escura ao passar o mouse */
+}
+
