@@ -9,18 +9,26 @@
     <link rel="stylesheet" href="/static/css/filters.css">
     <link rel="stylesheet" href="/static/css/date.css">
     <link rel="stylesheet" href="/static/css/labels.css">
+    <link rel="stylesheet" href="/static/css/headerActions.css">
 </head>
 <body>
     <div class="container">
-        <div class="container-logout">
+        <div class="header-actions">
+            <button id="btn-settings" onclick="alert('Abrir configurações!')" title="Configurações">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3"></circle>
+                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 5.16 19.4a1.65 1.65 0 0 0-1.82-.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 .33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a2 2 0 0 1 2-2v-.09a1.65 1.65 0 0 0 1-1.51 1.65 1.65 0 0 0 1.51-1H16a2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.82.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.09a1.65 1.65 0 0 0 1 1.51Z"></path>
+                </svg>
+            </button>
             <button id="btn-logout" onclick="alert('Você foi desconectado!')" title="Logout">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 16 16 12 12 8"></polyline>
                     <line x1="8" y1="12" x2="16" y2="12"></line>
                 </svg>
-  </button>
+            </button>
         </div>
+
         <h1 class="animated">Lista de Tarefas</h1>
 
         <div class="input-area">           

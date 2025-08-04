@@ -1,0 +1,47 @@
+.header-actions {
+  position: absolute; /* Permite posicionar o grupo de botões */
+  top: 25px; /* Distância do topo */
+  right: 25px; /* Distância da direita */
+  display: flex; /* Para alinhar os botões lado a lado */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+#btn-settings,
+#btn-logout {
+  background-color: #f0f0f0; /* Um cinza claro elegante */
+  color: #555; /* Cor do ícone para o botão de configurações */
+  padding: 10px; /* Padding ajustado para ser mais quadrado e ícone-focado */
+  border: none;
+  border-radius: 8px; /* Cantos arredondados, igual aos outros elementos */
+  cursor: pointer;
+  font-size: 0.95em;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra suave */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex; /* Para centralizar o SVG */
+  align-items: center; /* Centraliza o SVG verticalmente */
+  justify-content: center; /* Centraliza o SVG horizontalmente */
+}
+
+#btn-settings:hover,
+#btn-logout:hover {
+  background-color: #e0e0e0; /* Cinza um pouco mais escuro ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de "levantar" */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12); /* Sombra mais pronunciada */
+}
+
+#btn-settings:active,
+#btn-logout:active {
+  transform: translateY(0); /* Retorna ao normal ao clicar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Sombra original */
+}
+
+/* Cor específica para o botão de logout (vermelho) */
+#btn-logout {
+    background-color: #f44336; 
+    color: white; /* Cor do ícone para o botão de logout */
+}
+
+#btn-logout:hover {
+    background-color: #d32f2f;
+}
