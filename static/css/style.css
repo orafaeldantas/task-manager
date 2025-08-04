@@ -173,12 +173,13 @@ textarea:focus, input:focus {
 #btn-logout {
   background-color: #dc3545; /* Vermelho para indicar logout */
   color: white;
-  padding: 10px 20px;
+  padding: 2px 5px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease; /* Efeito de transição suave */
+  text-align: center;
 }
 
 #btn-logout:hover {
