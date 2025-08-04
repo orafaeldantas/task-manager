@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha ToDoList</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/tasks.css">
+    <link rel="stylesheet" href="/static/css/filters.css">
+    <link rel="stylesheet" href="/static/css/date.css">
+    <link rel="stylesheet" href="/static/css/labels.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animated">Lista de Tarefas</h1>
+
+        <div class="input-area">
+            <label for="task-input">Título da Tarefa:</label>
+            <input type="text" id="task-input" placeholder="Adicione um título para a tarefa...">
+            <label for="taskDescription">Descrição da Tarefa:</label>
+            <textarea id="taskDescription" rows="5" placeholder="Adicione detalhes da tarefa..."></textarea>
+
+            <div class="input-area-child">
+                <label for="taskDeadline">Prazo de Entrega:</label>
+                <input type="date" id="taskDeadline">
+                <input type="time" id="taskTime">
+                <button id="add-task-btn" onclick="addTaskToBackend()">Adicionar</button>
+            </div>
+            
+        </div>
+
+        <ul id="task-list">
+            </ul>
+
+        <div class="filters">
+            <button id="filter-all" class="active" onclick="getTasks()">Todas</button>
+            <button id="filter-active" class="active" onclick="listTasks('active')">Ativas</button>
+            <button id="filter-completed" class="active" onclick="listTasks('completed')">Concluídas</button>
+            <button id="filter-completed" class="active" onclick="listTasks('priority')">Prioridades</button>
+        </div>
+
+        <div id="taskContainer">
+            <ul id="taskList">
+                                
+            </ul>           
+        </div>
+    </div>
+
+    <!--
+        <ul>
+          <li>
+            <ul>
+              <li>
+            </ul>
+           <li>     
+        </ul>
+    -->
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

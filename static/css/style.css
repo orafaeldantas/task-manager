@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha no topo, para não sumir com o scroll */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que padding não adicione scroll indesejado */
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px; /* Para descolar um pouco do topo */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-area {
+    display: flex; /* Transforma o .input-area em um container flex */
+    flex-direction: column; /* Faz os itens flex dentro dele se empilharem verticalmente */
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.input-area-child {
+    display: flex; /* Transforma o .input-area em um container flex */
+    flex-direction: row; /* Faz os itens flex dentro dele se empilharem verticalmente */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#task-input {
+    flex-grow: 1; /* Preenche o espaço disponível */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+#add-task-btn {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+#add-task-btn:hover {
+    background-color: #4cae4c;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.task-item .task-text {
+    flex-grow: 1;
+    font-size: 1.1rem;
+    color: #555;
+    word-break: break-word; /* Quebra palavras longas */
+}
+
+.task-item.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.task-actions .complete-btn {
+    background-color: #28a745; /* Verde para concluir */
+}
+
+.task-actions .complete-btn:hover {
+    background-color: #218838;
+}
+
+.task-actions .delete-btn {
+    background-color: #dc3545; /* Vermelho para excluir */
+}
+
+.task-actions .delete-btn:hover {
+    background-color: #c82333;
+}
+
+.task-count {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+}
+
+.task-count #pending-tasks-count {
+    font-weight: bold;
+    color: #333;
+}
+
+.dateText, .deadline {
+    font-family: Arial, sans-serif; /* Ou a mesma fonte dos status, como 'Montserrat' ou 'Segoe UI' */
+    font-size: 0.9em; /* Um pouco menor que o texto principal */
+    color: #6c757d; /* Um cinza médio, sutil e legível */
+    margin-top: 5px; /* Um pequeno espaçamento acima da data */
+    font-style: italic; /* Para dar um toque diferenciado */
+}
+
+textarea {
+    resize: none;
+    flex-grow: 1; /* Preenche o espaço disponível */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-right: 10px;
+    font-family: Arial, sans-serif;   
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    /*border-color: #888;*/
+    box-shadow: 0 0 0 3px rgba(136, 136, 136, 0.25);
+}
+

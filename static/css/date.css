@@ -1,0 +1,75 @@
+input[type="date"], input[type="time"] {
+  /* Fonte e tamanho */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  
+  /* Cores */
+  color: #333; /* Cor do texto */
+  background-color: #f9f9f9; /* Fundo levemente cinza */
+  border: 1px solid #ccc; /* Borda sutil */
+  
+  /* Espaçamento e arredondamento */
+  padding: 0.5rem 0.75rem; /* Preenchimento interno */
+  border-radius: 6px; /* Cantos levemente arredondados */
+  
+  /* Largura e alinhamento */
+  width: 100%; /* Ocupa a largura total do contêiner */
+  max-width: 250px; /* Largura máxima para não ficar muito grande */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  
+  /* Transição suave para efeitos de hover/focus */
+  transition: all 0.3s ease-in-out;
+  
+  /* Remover a aparência padrão do navegador (opcional, pode variar o suporte) */
+  -webkit-appearance: none; /* Para navegadores WebKit (Chrome, Safari) */
+  -moz-appearance: none;    /* Para navegadores Mozilla (Firefox) */
+  appearance: none;
+}
+
+/* Estilo ao focar no input (quando o usuário clica ou tabula nele) */
+input[type="date"]:focus, input[type="time"]:focus {
+  border-color: #007bff; /* Borda azul mais vibrante */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra suave */
+  outline: none; /* Remove o outline padrão do navegador */
+  background-color: #fff; /* Fundo branco ao focar */
+}
+
+/* Estilo para quando o input está desabilitado */
+input[type="date"]:disabled, input[type="time"]:disabled {
+  background-color: #e9ecef; /* Fundo mais claro */
+  color: #6c757d; /* Texto mais suave */
+  cursor: not-allowed; /* Cursor de "não permitido" */
+}
+
+/* Estilo para o placeholder (se houver um, embora type="date" geralmente não use) */
+input[type="date"]::placeholder {
+  color: #6c757d;
+  opacity: 1; /* Para garantir que seja visível em todos os navegadores */
+}
+
+/* Estilização específica para o ícone do calendário (pode variar o suporte e a necessidade) */
+/* Em alguns navegadores, o ícone do calendário pode ser estilizado.
+   Geralmente, isso é feito de forma limitada ou substituindo o input por um customizado.
+   Este é um exemplo mais avançado e pode não funcionar em todos os casos. */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5); /* Inverte a cor do ícone para contrastar com o fundo */
+  cursor: pointer; /* Indica que é clicável */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* Exemplo de uso em um formulário (para contexto) */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}

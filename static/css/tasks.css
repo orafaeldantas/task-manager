@@ -1,0 +1,250 @@
+#taskContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Task List Container */
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    width: 100%;
+    max-width: 600px; /* Limit width for better readability */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+#task_li_master {
+    padding: 0;
+}
+
+/* Individual Task Item */
+#task_li_slave {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+}
+
+#task_ul_slave {
+    padding: 0;
+}
+
+#task_li_slave:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+#task_li_slave:hover {
+    background-color: #f9f9f9;
+}
+
+/* Checkbox Styling */
+#task_li_slave input[type="checkbox"] {
+    appearance: none; /* Hide default checkbox */
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+    flex-shrink: 0; /* Prevent checkbox from shrinking */
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+#task_li_slave input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+#task_li_slave input[type="checkbox"]:checked::after {
+    content: '\2713'; /* Checkmark symbol */
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Label for Checkbox */
+#task_li_slave label {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    cursor: pointer;
+    margin-right: 15px; /* Space between label and task title */
+    flex-shrink: 0;
+}
+
+
+/* Task Title Styling */
+#task_li_slave span {
+    flex-grow: 1; /* Allows the title to take up available space */
+    font-size: 1.1em;
+    color: #333;
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+/* Strikethrough for Completed Tasks */
+#taskList li span.completed {
+    text-decoration: line-through;
+    color: #95a5a6;
+}
+
+/* Delete Button Styling */
+#task_li_slave button.btnDelete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 20px; /* Space between task title and button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+#task_li_slave button.btnEdit { 
+    background-color: #858585;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 20px; /* Space between task title and button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+
+#task_li_slave button.btnPriority { 
+    background-color: #858585;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 20px; /* Space between task title and button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex-shrink: 0; /* Prevent button from shrinking */
+}
+.btnDetails { 
+    background-color: #007bff; /* Azul primário */
+    color: white; /* Texto branco para contraste */
+    border: none;
+    padding: 8px 12px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Suaviza a transição de cor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+}
+
+.btnDetails:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+.btnDetails:active {
+    background-color: #004085; /* Azul ainda mais escuro ao clicar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra menor ao clicar */
+    transform: translateY(1px); /* Pequeno movimento para indicar clique */
+}
+
+#task_li_slave button.btnDelete:hover {
+    background-color: #c0392b;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#taskList li button.btnEdit:hover {
+    background-color: #5a5a5a;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* No Tasks Message */
+#noHistoryMessage {
+    text-align: center;
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 20px;
+}
+
+.task-details {
+    display: block;
+}
+
+.task-details {
+    background-color: #f9f9f9; /* Um cinza bem claro */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço abaixo de cada detalhe de tarefa */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna */
+    color: #333; /* Cor de texto principal */
+}
+
+.task-details h3 {
+    color: #2c3e50; /* Cor para o título da tarefa */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    border-bottom: 1px solid #eee; /* Linha de separação abaixo do título */
+    padding-bottom: 10px;
+}
+
+.task-details p {
+    line-height: 1.6; /* Espaçamento entre linhas para melhor leitura */
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.task-details strong {
+    color: #555; /* Cor para textos em negrito */
+}
+
+/* Estilo para um elemento de data ou status, se houver */
+.task-details .meta-info {
+    font-size: 0.9em;
+    color: #777;
+    text-align: right;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #eee; /* Linha tracejada para separar metadados */
+}
+
+.labelStatusTrue {
+    font-family: 'Montserrat', sans-serif; /* Uma fonte mais moderna, se disponível */
+    font-size: 1em;
+    color: #ffffff; /* Texto branco */
+    background: linear-gradient(to right, #28a745, #218838); /* Degradê de verde */
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600; /* Um pouco mais encorpado */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra maior para o elemento */
+}
+
+.labelStatusFalse {
+    font-family: 'Montserrat', sans-serif; /* Uma fonte mais moderna, se disponível */
+    font-size: 1em;
+    color: #ffffff; /* Texto branco */
+    background: linear-gradient(to right, #dc3545, #fd7e14); /* Degradê de vermelho para laranja */
+    padding: 12px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 600; /* Um pouco mais encorpado */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto para destaque */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

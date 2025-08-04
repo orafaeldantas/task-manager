@@ -1,0 +1,299 @@
+[
+    {
+        "id": 1,
+        "title": "Tarefa 1",
+        "completed": false,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 2,
+        "title": "Tarefa 2",
+        "completed": false,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 3,
+        "title": "Tarefa 3",
+        "completed": false,
+        "priority": "high",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 4,
+        "title": "Tarefa 4",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 5,
+        "title": "Tarefa 5",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 6,
+        "title": "Tarefa 6",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 7,
+        "title": "Tarefa 756",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 8,
+        "title": "Tarefa 8",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 9,
+        "title": "Tarefa 9",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 10,
+        "title": "Tarefa 10",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 11,
+        "title": "Tarefa 11",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 12,
+        "title": "Tarefa 12",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 13,
+        "title": "Tarefa 13",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 14,
+        "title": "1111",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 15,
+        "title": "1111333",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 16,
+        "title": "1111333ddd",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 17,
+        "title": "ddddd222",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 18,
+        "title": "sssdddd",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 20,
+        "title": "ddddd33",
+        "completed": false,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 24,
+        "title": "asdasdassss",
+        "completed": true,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 26,
+        "title": "asdasdasdddd123",
+        "completed": true,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 27,
+        "title": "aaa",
+        "completed": false,
+        "priority": "high",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 28,
+        "title": "dasdasdas",
+        "completed": false,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 29,
+        "title": "ddasghfghfghf",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 30,
+        "title": "Rafael",
+        "completed": false,
+        "priority": "medium",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 31,
+        "title": "fffff",
+        "completed": false,
+        "priority": "low",
+        "date": "06:32:16, 10/07/2025",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 32,
+        "title": "ljkljfghfghfg",
+        "completed": true,
+        "priority": "low",
+        "date": "11/07/2025 - 10:52:38",
+        "details": "-",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 33,
+        "title": "dddasfasf",
+        "completed": false,
+        "priority": "medium",
+        "date": "22/07/2025 - 06:04:26 ",
+        "details": "detalhes da tarefa",
+        "taskDeadline": "22/07/2025"
+    },
+    {
+        "id": 34,
+        "title": "teste",
+        "completed": false,
+        "priority": "low",
+        "date": "23/07/2025 - 07:14:24 ",
+        "details": "teste detalhes",
+        "taskDeadline": "2025-07-30"
+    },
+    {
+        "id": 35,
+        "title": "asdasdas",
+        "completed": false,
+        "priority": "low",
+        "date": "25/07/2025 - 06:11:37 ",
+        "details": "dasdasdsad",
+        "taskDeadline": "31/07/2025"
+    },
+    {
+        "id": 36,
+        "title": "dadad",
+        "completed": true,
+        "priority": "low",
+        "date": "25/07/2025 - 06:36:54 ",
+        "details": "adadas",
+        "taskDeadline": "29/07/2025 - 10:39"
+    },
+    {
+        "id": 37,
+        "title": "asdasd",
+        "completed": true,
+        "priority": "low",
+        "date": "25/07/2025 - 10:01 ",
+        "details": "asdasdasd",
+        "taskDeadline": "29/07/2025 - 10:39"
+    },
+    {
+        "id": 38,
+        "title": "gggdf",
+        "completed": false,
+        "priority": "high",
+        "date": "25/07/2025 - 10:01 ",
+        "details": "sdfsdfds",
+        "taskDeadline": "15/07/2025 - 14:06"
+    }
+]

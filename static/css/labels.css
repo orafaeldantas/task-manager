@@ -1,0 +1,108 @@
+label[for="task-input"] {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem; /* Adjust as needed, 1rem is usually a good base */
+  font-weight: 600; /* Slightly bolder for emphasis */
+  color: #333; /* Dark gray for good contrast */
+  display: block; /* Ensures the label takes its own line */
+  margin-bottom: 8px; /* Space between label and input */
+  letter-spacing: 0.02em; /* Subtle letter spacing for better readability */
+  text-transform: uppercase; /* Optional: Makes the text uppercase for a more structured look */
+  opacity: 0.9; /* Slightly reduce opacity for a softer look */
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Optional: Hover effect for a more interactive feel */
+label[for="task-input"]:hover {
+  color: #007bff; /* A nice blue on hover, or pick your brand color */
+}
+
+/* Optional: Focus within effect - when the associated input is focused */
+label[for="task-input"]:focus-within {
+  color: #0056b3; /* A slightly darker blue when its input is active */
+}
+
+label[for="taskDescription"] {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem; /* Tamanho da fonte base, ajustável */
+  font-weight: 600; /* Levemente mais robusto para destaque */
+  color: #333; /* Cinza escuro para bom contraste */
+  display: block; /* Garante que o rótulo ocupe sua própria linha */
+  margin-bottom: 8px; /* Espaço abaixo do rótulo */
+  letter-spacing: 0.02em; /* Espaçamento sutil entre as letras */
+  text-transform: uppercase; /* Opcional: Transforma o texto em maiúsculas */
+  opacity: 0.9; /* Opacidade levemente reduzida para um visual mais suave */
+  transition: color 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+/* Opcional: Efeito de hover para interatividade */
+label[for="taskDescription"]:hover {
+  color: #007bff; /* Um tom de azul agradável ao passar o mouse */
+}
+
+/* Opcional: Efeito de foco quando o campo associado está ativo */
+label[for="taskDescription"]:focus-within {
+  color: #0056b3; /* Um azul ligeiramente mais escuro quando o input está focado */
+}
+
+label[for="taskDeadline"] {
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem; /* Tamanho da fonte base */
+  font-weight: 600; /* Levemente mais robusto para destaque */
+  color: #333; /* Cinza escuro para bom contraste e elegância */
+  display: block; /* Garante que o rótulo ocupe sua própria linha */
+  margin-bottom: 8px; /* Espaço abaixo do rótulo */
+  letter-spacing: 0.02em; /* Espaçamento sutil entre as letras */
+  text-transform: uppercase; /* Opcional: Maiúsculas para um visual estruturado */
+  opacity: 0.9; /* Opacidade levemente reduzida para suavidade */
+  transition: color 0.3s ease-in-out; /* Transição suave para efeitos de hover */
+}
+
+/* Opcional: Efeito de hover para interatividade */
+label[for="taskDeadline"]:hover {
+  color: #007bff; /* Um tom de azul vibrante ao passar o mouse */
+}
+
+/* Opcional: Efeito de foco quando o campo associado está ativo */
+label[for="taskDeadline"]:focus-within {
+  color: #0056b3; /* Um azul ligeiramente mais escuro quando o input está focado */
+}
+
+h1 {
+  font-family: 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 2.8rem; /* Tamanho do título para impacto, ajuste conforme seu layout */
+  font-weight: 700; /* Negrito para destaque, mas não excessivo */
+  color: #2c3e50; /* Um tom de azul-marinho/grafite para elegância */
+  text-align: center; /* Centraliza o título na página */
+  margin-top: 40px; /* Espaço acima do título */
+  margin-bottom: 30px; /* Espaço abaixo do título */
+  letter-spacing: -0.02em; /* Reduz ligeiramente o espaçamento entre letras para um visual moderno */
+  line-height: 1.2; /* Altura da linha para melhor legibilidade em múltiplas linhas (se houver) */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Sombra sutil para profundidade */
+  border-bottom: 2px solid rgba(0, 123, 255, 0.1); /* Linha fina e suave abaixo do título */
+  padding-bottom: 15px; /* Espaçamento entre o texto e a linha */
+}
+
+/* Opcional: Para telas menores, ajuste o tamanho da fonte */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Opcional: Animação de entrada sutil (se quiser um efeito mais dinâmico) */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1.animated {
+  animation: fadeInSlideUp 0.8s ease-out forwards;
+}
