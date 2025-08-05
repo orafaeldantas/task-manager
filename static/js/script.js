@@ -392,4 +392,34 @@ function displayTasks(taskArray) {
     }
 }
 
+// ======================= LOGOUT ===========================
+
+async function finishSession() {
+    try {
+        const response = await fetch('http://127.0.0.1:5000/logout', {
+        method: 'POST', 
+        headers: {
+        'Accept': 'application/json', 
+        'Content-Type': 'application/json'
+        }       
+    }); 
+
+    if (!response.ok) {               
+        const errorText = await response.text(); // Lê como texto primeiro
+        console.error('Erro HTTP ao fazer logout:', response.status, errorText);
+        throw new Error(`Erro ao fazer logout: ${response.status} - ${errorText.substring(0, 100)}...`); // Limita para não mostrar HTML completo no erro
+    } 
+    
+    alert('Logout realizado com sucesso!');
+    window.location.href = '/login';
+    
+     
+    } catch (error) {
+        console.error('Erro!:', error);
+        alert(`Não foi possível fazer logout: ${error.message}`);
+    }
+
+}
+
+
 document.addEventListener('DOMContentLoaded', getTasks);

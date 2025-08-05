@@ -56,7 +56,7 @@ def login():
             return jsonify({'message': 'Nome de usuário ou senha inválidos.'}), 401
     return send_from_directory(STATIC_FOLDER, 'login.html')
 
-@app.route('/logout')
+@app.route('/logout', methods=['POST'])
 def logout():
     session.pop('logged_in', None)
     session.pop('username', None)
