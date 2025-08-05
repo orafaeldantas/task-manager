@@ -14,33 +14,12 @@
 <body>
     <div class="container">
         <div class="header-actions">
-            <button id="btn-settings" onclick="alert('Abrir configurações!')" title="Configurações">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 
-                        2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33
-                        1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09
-                        a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06
-                        a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82
-                        1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09
-                        a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06
-                        a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33
-                        1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09
-                        a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06
-                        a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82
-                        1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09
-                        a1.65 1.65 0 0 0-1.51 1Z" />
-                </svg>
-
+            <button id="btn-settings" onclick="alert('Abrir configurações!')" title="Configurações">                
+                <img src="{{ url_for('static', filename='assets/svg/settings.svg') }}">                          
             </button>
             <button id="btn-logout" onclick="finishSession()" title="Logout">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polyline points="12 16 16 12 12 8"></polyline>
-                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                </svg>
+                <!--<img src="static/assets/svg/logout.svg" alt="Ícone de engrenagem" width="20" height="20"> -->
+                <img src="{{ url_for('static', filename='assets/svg/logout.svg') }}"> 
             </button>
         </div>
 

@@ -13,6 +13,7 @@ app = Flask(__name__)
 app.secret_key = secret_key_string
 
 STATIC_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
+
 TASKS = 'tasks.json'
 task_id_counter = 1
 
@@ -36,7 +37,8 @@ def login_required(f):
 def index():
     if 'logged_in' in session and session['logged_in']:
         tasks = load_task()
-        return send_from_directory(STATIC_FOLDER, 'index.html')
+        #return send_from_directory(STATIC_FOLDER, 'index.html')
+        return render_template('index.html')
     return redirect(url_for('login'))
 
 @app.route('/login', methods=['GET', 'POST'])
