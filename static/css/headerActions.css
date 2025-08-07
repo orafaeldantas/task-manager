@@ -49,3 +49,17 @@
     background-color: #d32f2f;
 }
 
+.details-internal-headers{
+  /* A propriedade principal */
+  float: right; 
+  width: 125px;
+  height: 200px;
+  background-color: lightblue;
+  padding: 10px;
+  position: absolute; /* Permite posicionar o grupo de botões */
+  top: 90px; /* Distância do topo */
+  right: 25px; /* Distância da direita */
+  display: flex; /* Para alinhar os botões lado a lado */
+  border-radius: 10px;
+}
+
