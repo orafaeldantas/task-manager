@@ -13,19 +13,22 @@
 </head>
 <body>
     <div class="container">
-        <div class="header-actions" onclick="btnPerfil()" title="Perfil">
-            <button id="btn-avatar">
-                <img src="{{ url_for('static', filename='assets/svg/avatar.svg') }}">  
-            </button>
-            
-            <button id="btn-settings" onclick="alert('Abrir configurações!')" title="Configurações">                
-                <img src="{{ url_for('static', filename='assets/svg/settings.svg') }}">                          
-            </button>
+        <div class="header-actions" title="Perfil">
+            <div class="headers-btn">
+                <button id="btn-avatar" onclick="btnPerfil()">
+                    <img src="{{ url_for('static', filename='assets/svg/avatar.svg') }}">  
+                </button>
+                
+                <button id="btn-settings" onclick="alert('Abrir configurações!')" title="Configurações">                
+                    <img src="{{ url_for('static', filename='assets/svg/settings.svg') }}">                          
+                </button>
 
-            <button id="btn-logout" onclick="finishSession()" title="Logout">
-                <!--<img src="static/assets/svg/logout.svg" alt="Ícone de engrenagem" width="20" height="20"> -->
-                <img src="{{ url_for('static', filename='assets/svg/logout.svg') }}"> 
-            </button>
+                <button id="btn-logout" onclick="finishSession()" title="Logout">
+                    <!--<img src="static/assets/svg/logout.svg" alt="Ícone de engrenagem" width="20" height="20"> -->
+                    <img src="{{ url_for('static', filename='assets/svg/logout.svg') }}"> 
+                </button>
+            </div>
+            <div class="headers-details"></div>
         </div>
 
         <h1 class="animated">Lista de Tarefas</h1>
