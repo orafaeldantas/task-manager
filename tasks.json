@@ -290,8 +290,8 @@
     {
         "id": 38,
         "title": "gggdf",
-        "completed": false,
-        "priority": "high",
+        "completed": true,
+        "priority": "medium",
         "date": "25/07/2025 - 10:01 ",
         "details": "sdfsdfds",
         "taskDeadline": "15/07/2025 - 14:06"

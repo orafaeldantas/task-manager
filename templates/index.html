@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="header-actions" onclick="alert('Esse é seu perfil!')" title="Perfil">
+        <div class="header-actions" onclick="btnPerfil()" title="Perfil">
             <button id="btn-avatar">
                 <img src="{{ url_for('static', filename='assets/svg/avatar.svg') }}">  
             </button>
@@ -73,5 +73,6 @@
     -->
 
     <script src="/static/js/script.js"></script>
+    <script src="/static/js/headers.js"></script>
 </body>
 </html>

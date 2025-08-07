@@ -56,6 +56,7 @@ def login():
             return jsonify({'message': 'Login bem-sucedido!'}), 200
         else:
             return jsonify({'message': 'Nome de usuário ou senha inválidos.'}), 401
+                
     return send_from_directory(STATIC_FOLDER, 'login.html')
 
 @app.route('/logout', methods=['POST'])
@@ -66,6 +67,12 @@ def logout():
 
 # ===========================================================
 
+@login_required
+@app.route('/get-user-name', methods=['GET'])
+def getUsername():
+    username = session.get('username')
+    print(username)
+    return jsonify({'name': username}), 200
 
 def load_task():
     if not os.path.exists(TASKS):
