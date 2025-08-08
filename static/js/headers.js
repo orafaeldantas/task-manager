@@ -28,7 +28,6 @@ async function btnPerfil() {
 function showPerfil(username){
 
     if (showDetails) {
-        showDetails = false;
 
         const divMaster = document.querySelector('.headers-details');
 
@@ -47,19 +46,7 @@ function showPerfil(username){
 
         addClickOutsideListener(divSlave);
 
-    } else {
-
-        showDetails = true;
-
-        const existingDiv = document.querySelector('.details-internal-headers');
-        if (existingDiv) {
-            existingDiv.remove();
-        }
-
-        
-    }
-   
-
+    }    
 }
 
 function addClickOutsideListener(divToRemove) {
