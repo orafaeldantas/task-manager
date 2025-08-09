@@ -40,9 +40,24 @@ function showPerfil(username){
 
         divSlave.className = "details-internal-headers";
 
-        divSlave.textContent = username;
+        const userImage = document.createElement('img');
+
+        userImage.src = '/static/assets/svg/avatar.svg';
+
+        userImage.style.width = '50px';
+        userImage.style.height = '50px';
+        userImage.style.borderRadius = '50%'; 
+        userImage.style.marginBottom = '8px';
+
+        const usernameText= document.createElement('p');
+        usernameText.textContent = username;
+        
+        divSlave.appendChild(userImage);
+        divSlave.appendChild(usernameText);
+        
 
         divMaster.appendChild(divSlave);
+
 
         addClickOutsideListener(divSlave);
 

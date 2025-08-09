@@ -1,7 +1,10 @@
+.headers-btn .details-internal-headers  {
+  right: 100px; /* Distância da direita */
+}
+
 .headers-btn {
   position: absolute; /* Permite posicionar o grupo de botões */
   top: 25px; /* Distância do topo */
-  right: 25px; /* Distância da direita */
   display: flex; /* Para alinhar os botões lado a lado */
   gap: 10px; /* Espaçamento entre os botões */
 }
@@ -49,17 +52,29 @@
     background-color: #d32f2f;
 }
 
-.details-internal-headers{
-  /* A propriedade principal */
-  float: right; 
+.details-internal-headers {
   width: 125px;
   height: 200px;
-  background-color: lightblue;
+  background: linear-gradient(135deg, #f0f4f8, #e0e6ed); 
+  background-color: #f0f4f8; 
   padding: 10px;
-  position: absolute; /* Permite posicionar o grupo de botões */
-  top: 90px; /* Distância do topo */
-  right: 25px; /* Distância da direita */
-  display: flex; /* Para alinhar os botões lado a lado */
-  border-radius: 10px;
+  position: absolute;
+  top: 90px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease-in-out; 
+}
+
+.details-internal-headers p {
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
 }
 
