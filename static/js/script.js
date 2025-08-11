@@ -7,7 +7,6 @@ const addTaskDeadlineTime = document.getElementById('taskTime');
 const taskList = document.getElementById('taskList');
 const buttonTask = document.getElementById('add-task-btn')
 let statusBtn = false;
-let titleUpdate;
 let completedUpdate;
 let idUpdate;
 let txtPriority = 'B'
@@ -35,6 +34,7 @@ async function addTaskToBackend() {
                 const newTask = await response.json();
                 console.log('Tarefa adicionada no backend:', newTask);  
 
+
             } else {
                 statusBtn = false;
                 const response = await fetch(`http://127.0.0.1:5000/tasks/${idUpdate}`, {
@@ -61,9 +61,9 @@ async function addTaskToBackend() {
 async function getTasks() {
     try {
         const response = await fetch('http://127.0.0.1:5000/tasks', {
-        method: 'GET', // Método padrão para buscar dados, mas é bom ser explícito
+        method: 'GET', // Get data in backend
         headers: {
-        'Accept': 'application/json' // <--- ADICIONE ESTA LINHA!
+        'Accept': 'application/json' 
         }
     }); 
 
@@ -77,13 +77,15 @@ async function getTasks() {
     if (statusBtn == false){
         buttonTask.textContent = 'Adicionar';
     }
-    const task = await response.json(); // Agora deve ser JSON válido
-    displayTasks(task);
+
     addTaskButton.value = "";
     addTaskDetails.value = "";
     addTaskDeadline.value = "";
     addTaskDeadlineTime.value ="";
 
+    const task = await response.json(); // Agora deve ser JSON válido
+    displayTasks(task);
+    
     } catch (error) {
         console.error('Erro ao buscar o lista:', error);
         alert(`Não foi possível carregar o lista: ${error.message}`);
@@ -275,7 +277,6 @@ function displayTasks(taskArray) {
                 console.log(`Edit task with ID: ${item.id}`);
                 editTask(item.id);
                 buttonTask.textContent = 'Salvar';
-                titleUpdate = item.title;
                 completedUpdate = item.completed;
                 idUpdate = item.id
                 statusBtn = true;
