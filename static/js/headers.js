@@ -1,6 +1,4 @@
 
-let showDetails = true;
-
 async function btnPerfil() {
 
     try {
@@ -27,42 +25,40 @@ async function btnPerfil() {
 
 function showPerfil(username){
 
-    if (showDetails) {
+    const divMaster = document.querySelector('.headers-details');
 
-        const divMaster = document.querySelector('.headers-details');
+    const existingDiv = document.querySelector('.details-internal-headers');
+    if (existingDiv) {
+        existingDiv.remove();
+    }
 
-        const existingDiv = document.querySelector('.details-internal-headers');
-        if (existingDiv) {
-            existingDiv.remove();
-        }
+    const divSlave = document.createElement('div');
 
-        const divSlave = document.createElement('div');
+    divSlave.className = "details-internal-headers";
 
-        divSlave.className = "details-internal-headers";
+    const userImage = document.createElement('img');
 
-        const userImage = document.createElement('img');
+    userImage.src = '/static/assets/svg/avatar.svg';
 
-        userImage.src = '/static/assets/svg/avatar.svg';
+    userImage.style.width = '50px';
+    userImage.style.height = '50px';
+    userImage.style.borderRadius = '50%'; 
+    userImage.style.marginBottom = '8px';
 
-        userImage.style.width = '50px';
-        userImage.style.height = '50px';
-        userImage.style.borderRadius = '50%'; 
-        userImage.style.marginBottom = '8px';
-
-        const usernameText= document.createElement('p');
-        usernameText.textContent = username;
+    const usernameText= document.createElement('p');
+    usernameText.textContent = username;
         
-        divSlave.appendChild(userImage);
-        divSlave.appendChild(usernameText);
+    divSlave.appendChild(userImage);
+    divSlave.appendChild(usernameText);
         
 
-        divMaster.appendChild(divSlave);
+    divMaster.appendChild(divSlave);
 
 
-        addClickOutsideListener(divSlave);
+    addClickOutsideListener(divSlave);
 
-    }    
-}
+}    
+
 
 function addClickOutsideListener(divToRemove) {
     
@@ -70,11 +66,9 @@ function addClickOutsideListener(divToRemove) {
 
         if (!divToRemove.contains(event.target) && divToRemove.parentNode) {
             
-            // Remove a div do seu elemento pai
             divToRemove.remove();
             
-            // Opcional: Remova o próprio ouvinte de evento para evitar vazamento de memória
-            // document.removeEventListener('click', suaFuncao); // (Isso seria mais complexo, mas é uma boa prática)
+             document.removeEventListener('click', addClickOutsideListener());
         }
     });
 }
