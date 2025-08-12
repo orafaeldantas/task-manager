@@ -217,7 +217,10 @@ function displayTasks(taskArray) {
 
             // Create task title span
             const taskTitle = document.createElement('span');
+            taskTitle.id = 'nameTitleTask';
+            taskTitle.title = `${item.id} | ${item.title}`;
             taskTitle.textContent = `${item.id} | ${item.title}`;
+
             if (item.completed) {
                 taskTitle.style.textDecoration = 'line-through'; // Cross out completed tasks
             }
@@ -347,10 +350,6 @@ function displayTasks(taskArray) {
                     }
                     detailsDiv.appendChild(labelStatus);
 
-                    const otherDetail = document.createElement('p');
-                    otherDetail.textContent = item.details;
-                    detailsDiv.appendChild(otherDetail);
-
                     const date = document.createElement('p');
                     date.classList.add('dateText');
                     date.textContent = 'Início da tarefa: ' + item.date;
@@ -359,7 +358,23 @@ function displayTasks(taskArray) {
                     const taskDeadline = document.createElement('p');
                     taskDeadline.classList.add('deadline');
                     taskDeadline.textContent = 'Prazo da tarefa: ' + item.taskDeadline;
-                    detailsDiv.appendChild(taskDeadline);
+                    const hr = document.createElement('hr');
+                    hr.classList.add('separator-line');
+                    taskDeadline.appendChild(hr)
+                    detailsDiv.appendChild(taskDeadline);                   
+                                        
+
+                    const titleDetail = document.createElement('p');
+                    titleDetail.classList.add('titleDetail');
+                    titleDetail.textContent = item.title;
+                    detailsDiv.appendChild(titleDetail);                
+
+                    const descriptionDetail = document.createElement('p');
+                    descriptionDetail.classList.add('descriptionDetail');
+                    descriptionDetail.textContent = item.details;
+                    detailsDiv.appendChild(descriptionDetail);
+
+                    
 
                     detailsButton.textContent = '-';
 

@@ -16,7 +16,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin-top: 50px; /* Para descolar um pouco do topo */
 }
 
@@ -160,6 +160,12 @@ textarea:focus, input:focus {
     outline: none;
     /*border-color: #888;*/
     box-shadow: 0 0 0 3px rgba(136, 136, 136, 0.25);
+}
+
+#nameTitleTask {
+    white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+    overflow: hidden; /* Oculta qualquer conteúdo que exceda o container */
+    text-overflow: ellipsis;
 }
 
 
