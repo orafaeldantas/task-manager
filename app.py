@@ -95,12 +95,15 @@ def home():
     #return render_template("index.html", tasks=tasks[::-1])
     return send_from_directory(STATIC_FOLDER, 'login.html')
 """
+
+# === GET TASKS ===
 @login_required
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
     tasks = load_task()
     return jsonify(tasks[::-1])
 
+# === CREATE TASK ===
 @login_required
 @app.route('/tasks', methods=['POST'])
 def add_task():
