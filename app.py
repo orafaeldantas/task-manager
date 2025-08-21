@@ -126,6 +126,9 @@ def add_task():
     date_time_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
     date_time_deadline = date_time_deadline_no_format.strftime('%d/%m/%Y')
 
+    if not data['taskDeadlineTime']:
+        data['taskDeadlineTime'] = 'Hora não definida'
+
     task_id_counter += 1
     new_task = {
         "id": task_id_counter,

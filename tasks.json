@@ -322,5 +322,14 @@
         "date": "20/08/2025 - 21:41 ",
         "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
         "taskDeadline": "22/08/2025 - "
+    },
+    {
+        "id": 42,
+        "title": "Compras no mercado",
+        "completed": false,
+        "priority": "high",
+        "date": "20/08/2025 - 21:52 ",
+        "details": "Comprar carne moída, filé de frango e ovos",
+        "taskDeadline": "29/08/2025 - Hora não definida"
     }
 ]
