@@ -313,5 +313,14 @@
         "date": "11/08/2025 - 20:36 ",
         "details": "asdas",
         "taskDeadline": "22/08/2025 - 05:23"
+    },
+    {
+        "id": 41,
+        "title": "Pagar contas da casa",
+        "completed": false,
+        "priority": "low",
+        "date": "20/08/2025 - 21:41 ",
+        "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
+        "taskDeadline": "22/08/2025 - "
     }
 ]
