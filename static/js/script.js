@@ -6,6 +6,7 @@ const addTaskDeadline = document.getElementById('taskDeadline');
 const addTaskDeadlineTime = document.getElementById('taskTime');
 const taskList = document.getElementById('taskList');
 const buttonTask = document.getElementById('add-task-btn')
+
 let statusBtn = false;
 let completedUpdate;
 let idUpdate;
@@ -191,7 +192,29 @@ async function editTask(task_id){
 
         const task = await response.json();
         addTaskButton.value = task.title; 
-        addTaskDetails.value = task.details;             
+        addTaskDetails.value = task.details;
+
+        let deadline = task.taskDeadline; // "22/08/2025 - 05:23"
+
+        
+        // Quebrar em partes
+        let [datePart, timePart] = deadline.split(" - "); // ["22/08/2025", "05:23"]
+        let [day, month, year] = datePart.split("/");     // ["22","08","2025"]
+
+        if (timePart.length != 5) {
+            timePart = "00:00";
+        }
+
+        // Montar no formato ISO (yyyy-MM-ddTHH:mm)
+        let isoString = `${year}-${month}-${day}T${timePart}:00`;
+
+        // Criar objeto Date
+        let dateNoFormated = new Date(isoString);
+
+        // Formatar para input[type="date"] (yyyy-MM-dd)
+        let dateFormated = dateNoFormated.toISOString().substring(0, 10);
+
+        addTaskDeadline.value = dateFormated;
 
         } catch (error) {
             console.error('Erro ao editar tarefa:', error);
@@ -271,6 +294,8 @@ function displayTasks(taskArray) {
 
             };
 
+
+            // ============= EDIT TASK BUTTON =============
             const editButton = document.createElement('button');
             editButton.id = `btnEditarTask_${item.id}`; // Unique ID for each button
             editButton.classList.add('btnEdit');
@@ -332,12 +357,7 @@ function displayTasks(taskArray) {
                 } else {
                     const detailsDiv = document.createElement('div');
                     detailsDiv.id = `detailsContainer_${item.id}`;
-                    detailsDiv.classList.add('task-details'); // Classe para estilização
-
-                    // Conteúdo dos detalhes
-                    /*const labelDetails = document.createElement('label');
-                    labelDetails.textContent = `Detalhes da Tarefa ID: ${item.id} - Mais informações aqui.`;
-                    detailsDiv.appendChild(labelDetails);*/
+                    detailsDiv.classList.add('task-details');                   
 
                     const labelStatus = document.createElement('label')
                     labelStatus.classList.add('labelStatus');
