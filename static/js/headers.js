@@ -60,6 +60,7 @@ function showPerfil(username){
 }    
 
 
+// Remove layer of perfil on click
 function addClickOutsideListener(divToRemove) {
     
     document.addEventListener('click', (event) => {
