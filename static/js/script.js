@@ -214,7 +214,10 @@ async function editTask(task_id){
         // Formatar para input[type="date"] (yyyy-MM-dd)
         let dateFormated = dateNoFormated.toISOString().substring(0, 10);
 
+        
+
         addTaskDeadline.value = dateFormated;
+        addTaskDeadlineTime.value = timePart;
 
         } catch (error) {
             console.error('Erro ao editar tarefa:', error);
@@ -242,18 +245,19 @@ function displayTasks(taskArray) {
             const taskTitle = document.createElement('span');
             taskTitle.id = 'nameTitleTask';
             taskTitle.title = `${item.id} | ${item.title}`;
-            taskTitle.textContent = `${item.id} | ${item.title}`;
+            //taskTitle.textContent = `${item.id} | ${item.title}`;
+            taskTitle.textContent = `${item.title}`;
 
             if (item.completed) {
-                taskTitle.style.textDecoration = 'line-through'; // Cross out completed tasks
+                taskTitle.style.textDecoration = 'line-through'; 
             }
-            // Create checkbox
+            
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
-            checkbox.id = `checkboxTask_${item.id}`; // Unique ID for each checkbox
+            checkbox.id = `checkboxTask_${item.id}`; 
             checkbox.name = 'taskCompleted';
-            // Set checked state based on your item data (e.g., if item.completed is true)
-            if (item.completed) { // Assuming your task item has a 'completed' property
+            
+            if (item.completed) { 
                 checkbox.checked = true;
             }
             checkbox.addEventListener('change', () => {

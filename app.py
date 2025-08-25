@@ -157,8 +157,14 @@ def update_task(task_id):
                 task['completed'] = data['completed']
             if 'priority' in data:
                 task['priority'] = data['priority']
+            if 'details' in data:
+                task['details'] = data['details']
+                print('entrou no details')
+
             save_task(tasks) 
+
             return jsonify(task)
+        
     return jsonify({"error": "Tarefa não encontrada"}), 404
 
 # === DELETE TASK ===

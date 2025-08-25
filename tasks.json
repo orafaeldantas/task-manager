@@ -1,335 +1,183 @@
 [
     {
-        "id": 1,
-        "title": "Tarefa 1",
-        "completed": false,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 1,
+      "title": "Pagar contas da casa",
+      "completed": true,
+      "priority": "low",
+      "date": "11/08/2025 - 20:36",
+      "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
+      "taskDeadline": "22/08/2025 - 05:23"
     },
     {
-        "id": 2,
-        "title": "Tarefa 2",
-        "completed": false,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 2,
+      "title": "Fazer compras no supermercado",
+      "completed": true,
+      "priority": "medium",
+      "date": "12/08/2025 - 09:15",
+      "details": "-> Arroz\n-> Feijão\n-> Frutas\n-> Produtos de limpeza",
+      "taskDeadline": "13/08/2025 - 18:00"
     },
     {
-        "id": 3,
-        "title": "Tarefa 3",
-        "completed": false,
-        "priority": "high",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 3,
+      "title": "Estudar Python - Módulo de Classes",
+      "completed": false,
+      "priority": "high",
+      "date": "12/08/2025 - 10:00",
+      "details": "-> Assistir aula online\n-> Fazer exercícios práticos\n-> Revisar exemplos",
+      "taskDeadline": "14/08/2025 - 23:00"
     },
     {
-        "id": 4,
-        "title": "Tarefa 4",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 4,
+      "title": "Levar o carro para revisão",
+      "completed": false,
+      "priority": "medium",
+      "date": "12/08/2025 - 15:25",
+      "details": "-> Troca de óleo\n-> Revisar freios\n-> Checar pneus",
+      "taskDeadline": "20/08/2025 - 12:00"
     },
     {
-        "id": 5,
-        "title": "Tarefa 5",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 5,
+      "title": "Agendar consulta médica",
+      "completed": true,
+      "priority": "high",
+      "date": "13/08/2025 - 08:45",
+      "details": "-> Clínico geral\n-> Verificar disponibilidade no convênio",
+      "taskDeadline": "15/08/2025 - 17:00"
     },
     {
-        "id": 6,
-        "title": "Tarefa 6",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 6,
+      "title": "Fazer exercícios físicos",
+      "completed": false,
+      "priority": "medium",
+      "date": "13/08/2025 - 19:00",
+      "details": "-> Caminhada 30 min\n-> Alongamento",
+      "taskDeadline": "13/08/2025 - 20:00"
     },
     {
-        "id": 7,
-        "title": "Tarefa 756",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 7,
+      "title": "Preparar apresentação do trabalho",
+      "completed": false,
+      "priority": "high",
+      "date": "14/08/2025 - 09:00",
+      "details": "-> Revisar slides\n-> Ensaiar explicação\n-> Revisar dados",
+      "taskDeadline": "16/08/2025 - 09:00"
     },
     {
-        "id": 8,
-        "title": "Tarefa 8",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 8,
+      "title": "Organizar documentos",
+      "completed": true,
+      "priority": "low",
+      "date": "14/08/2025 - 11:30",
+      "details": "-> Separar comprovantes\n-> Guardar recibos",
+      "taskDeadline": "18/08/2025 - 17:30"
     },
     {
-        "id": 9,
-        "title": "Tarefa 9",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 9,
+      "title": "Fazer backup do computador",
+      "completed": false,
+      "priority": "medium",
+      "date": "14/08/2025 - 20:00",
+      "details": "-> Fotos\n-> Projetos\n-> Documentos",
+      "taskDeadline": "17/08/2025 - 22:00"
     },
     {
-        "id": 10,
-        "title": "Tarefa 10",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 10,
+      "title": "Ligar para a família",
+      "completed": true,
+      "priority": "low",
+      "date": "15/08/2025 - 18:45",
+      "details": "-> Falar com mãe\n-> Perguntar sobre saúde dos avós",
+      "taskDeadline": "15/08/2025 - 21:00"
     },
     {
-        "id": 11,
-        "title": "Tarefa 11",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 11,
+      "title": "Planejar viagem de fim de semana",
+      "completed": false,
+      "priority": "low",
+      "date": "15/08/2025 - 09:30",
+      "details": "-> Reservar hotel\n-> Definir roteiro",
+      "taskDeadline": "19/08/2025 - 19:00"
     },
     {
-        "id": 12,
-        "title": "Tarefa 12",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 12,
+      "title": "Assistir aula de Data Science",
+      "completed": true,
+      "priority": "high",
+      "date": "16/08/2025 - 14:00",
+      "details": "-> Estudo de Pandas\n-> Exercícios práticos",
+      "taskDeadline": "16/08/2025 - 18:00"
     },
     {
-        "id": 13,
-        "title": "Tarefa 13",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 13,
+      "title": "Arrumar quarto",
+      "completed": true,
+      "priority": "low",
+      "date": "16/08/2025 - 16:00",
+      "details": "-> Guardar roupas\n-> Limpar mesa\n-> Organizar estante",
+      "taskDeadline": "16/08/2025 - 20:00"
     },
     {
-        "id": 14,
-        "title": "1111",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 14,
+      "title": "Estudar inglês",
+      "completed": false,
+      "priority": "medium",
+      "date": "17/08/2025 - 07:00",
+      "details": "-> Revisar vocabulário\n-> Fazer exercícios de leitura",
+      "taskDeadline": "17/08/2025 - 22:00"
     },
     {
-        "id": 15,
-        "title": "1111333",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 15,
+      "title": "Limpar cozinha",
+      "completed": true,
+      "priority": "low",
+      "date": "17/08/2025 - 10:00",
+      "details": "-> Lavar louça\n-> Limpar fogão\n-> Passar pano no chão",
+      "taskDeadline": "17/08/2025 - 13:00"
     },
     {
-        "id": 16,
-        "title": "1111333ddd",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 16,
+      "title": "Atualizar currículo",
+      "completed": false,
+      "priority": "high",
+      "date": "18/08/2025 - 15:00",
+      "details": "-> Inserir novos cursos\n-> Revisar experiências",
+      "taskDeadline": "19/08/2025 - 23:00"
     },
     {
-        "id": 17,
-        "title": "ddddd222",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 17,
+      "title": "Estudar algoritmos",
+      "completed": false,
+      "priority": "high",
+      "date": "18/08/2025 - 20:00",
+      "details": "-> Resolver exercícios de grafos\n-> Revisar estruturas de dados",
+      "taskDeadline": "20/08/2025 - 22:00"
     },
     {
-        "id": 18,
-        "title": "sssdddd",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 18,
+      "title": "Ler livro de ficção científica",
+      "completed": false,
+      "priority": "low",
+      "date": "19/08/2025 - 21:00",
+      "details": "-> Continuar leitura de Isaac Asimov",
+      "taskDeadline": "30/08/2025 - 23:59"
     },
     {
-        "id": 20,
-        "title": "ddddd33",
-        "completed": false,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
+      "id": 19,
+      "title": "Cuidar das plantas",
+      "completed": true,
+      "priority": "low",
+      "date": "19/08/2025 - 08:00",
+      "details": "-> Regar vasos\n-> Adubar plantas",
+      "taskDeadline": "19/08/2025 - 09:00"
     },
     {
-        "id": 24,
-        "title": "asdasdassss",
-        "completed": true,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 26,
-        "title": "asdasdasdddd123",
-        "completed": true,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 27,
-        "title": "aaa",
-        "completed": false,
-        "priority": "high",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 28,
-        "title": "dasdasdas",
-        "completed": false,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 29,
-        "title": "ddasghfghfghf",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 30,
-        "title": "Rafael",
-        "completed": false,
-        "priority": "medium",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 31,
-        "title": "fffff",
-        "completed": false,
-        "priority": "low",
-        "date": "06:32:16, 10/07/2025",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 32,
-        "title": "ljkljfghfghfg",
-        "completed": true,
-        "priority": "low",
-        "date": "11/07/2025 - 10:52:38",
-        "details": "-",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 33,
-        "title": "dddasfasf",
-        "completed": false,
-        "priority": "medium",
-        "date": "22/07/2025 - 06:04:26 ",
-        "details": "detalhes da tarefa",
-        "taskDeadline": "22/07/2025"
-    },
-    {
-        "id": 34,
-        "title": "teste",
-        "completed": false,
-        "priority": "low",
-        "date": "23/07/2025 - 07:14:24 ",
-        "details": "teste detalhes",
-        "taskDeadline": "2025-07-30"
-    },
-    {
-        "id": 35,
-        "title": "asdasdas",
-        "completed": false,
-        "priority": "low",
-        "date": "25/07/2025 - 06:11:37 ",
-        "details": "dasdasdsad",
-        "taskDeadline": "31/07/2025"
-    },
-    {
-        "id": 36,
-        "title": "dadad23",
-        "completed": true,
-        "priority": "low",
-        "date": "25/07/2025 - 06:36:54 ",
-        "details": "adadas",
-        "taskDeadline": "29/07/2025 - 10:39"
-    },
-    {
-        "id": 37,
-        "title": "asdasd",
-        "completed": true,
-        "priority": "low",
-        "date": "25/07/2025 - 10:01 ",
-        "details": "asdasdasd",
-        "taskDeadline": "29/07/2025 - 10:39"
-    },
-    {
-        "id": 38,
-        "title": "gggdf",
-        "completed": false,
-        "priority": "medium",
-        "date": "25/07/2025 - 10:01 ",
-        "details": "sdfsdfds",
-        "taskDeadline": "15/07/2025 - 14:06"
-    },
-    {
-        "id": 39,
-        "title": "testeeeeeeeeeeeeeeeeeeeeee",
-        "completed": false,
-        "priority": "low",
-        "date": "11/08/2025 - 20:28 ",
-        "details": "teasdasesdgfsdagadrfeqwrfgadsgadfgadfgfdsgdaf gdf\ndfasdfsdf",
-        "taskDeadline": "28/08/2025 - 08:03"
-    },
-    {
-        "id": 40,
-        "title": "asdas",
-        "completed": false,
-        "priority": "low",
-        "date": "11/08/2025 - 20:36 ",
-        "details": "asdas",
-        "taskDeadline": "22/08/2025 - 05:23"
-    },
-    {
-        "id": 41,
-        "title": "Pagar contas da casa",
-        "completed": false,
-        "priority": "low",
-        "date": "20/08/2025 - 21:41 ",
-        "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
-        "taskDeadline": "22/08/2025 - "
-    },
-    {
-        "id": 42,
-        "title": "Compras no mercado",
-        "completed": false,
-        "priority": "high",
-        "date": "20/08/2025 - 21:52 ",
-        "details": "Comprar carne moída, filé de frango e ovos",
-        "taskDeadline": "29/08/2025 - Hora não definida"
+      "id": 20,
+      "title": "Organizar lista de estudos",
+      "completed": false,
+      "priority": "medium",
+      "date": "20/08/2025 - 13:00",
+      "details": "-> Definir horários\n-> Separar materiais",
+      "taskDeadline": "21/08/2025 - 22:00"
     }
-]
+  ]
+  
