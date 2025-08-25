@@ -263,7 +263,7 @@ function displayTasks(taskArray) {
             checkbox.addEventListener('change', () => {
 
                 const taskId = item.id;
-                const isCompleted = checkbox.checked; // Pega o novo status
+                const isCompleted = checkbox.checked;
                 let status = false;
 
                 if (isCompleted) {
@@ -288,7 +288,7 @@ function displayTasks(taskArray) {
 
             // Create delete button
             const deleteButton = document.createElement('button');
-            deleteButton.id = `btnExcluirTask_${item.id}`; // Unique ID for each button
+            deleteButton.id = `btnExcluirTask_${item.id}`; 
             deleteButton.textContent = 'Excluir';
             deleteButton.classList.add('btnDelete');
             deleteButton.onclick = () => {
@@ -301,7 +301,7 @@ function displayTasks(taskArray) {
 
             // ============= EDIT TASK BUTTON =============
             const editButton = document.createElement('button');
-            editButton.id = `btnEditarTask_${item.id}`; // Unique ID for each button
+            editButton.id = `btnEditarTask_${item.id}`; 
             editButton.classList.add('btnEdit');
             editButton.textContent = 'Editar';
             editButton.onclick = () => {
@@ -315,6 +315,7 @@ function displayTasks(taskArray) {
                                 
             };
 
+            // ============= PRIORITY BUTTON =============
             const priorityButton = document.createElement('button');
             priorityButton.id = `btnPriority_${item.id}`;
             priorityButton.classList.add('btnPriority');
@@ -345,6 +346,7 @@ function displayTasks(taskArray) {
                            
             };
 
+            // ============= DETAILS BUTTON =============
             const detailsButton = document.createElement('button');
             detailsButton.id = `btnDetails_${item.id}`;
             detailsButton.classList.add('btnDetails');
@@ -374,6 +376,7 @@ function displayTasks(taskArray) {
                     }
                     detailsDiv.appendChild(labelStatus);
 
+                    
                     const date = document.createElement('p');
                     date.classList.add('dateText');
                     date.textContent = 'Início da tarefa: ' + item.date;
@@ -445,7 +448,7 @@ async function finishSession() {
     }); 
 
     if (!response.ok) {               
-        const errorText = await response.text(); // Lê como texto primeiro
+        const errorText = await response.text(); 
         console.error('Erro HTTP ao fazer logout:', response.status, errorText);
         throw new Error(`Erro ao fazer logout: ${response.status} - ${errorText.substring(0, 100)}...`); // Limita para não mostrar HTML completo no erro
     } 
