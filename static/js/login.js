@@ -1,7 +1,9 @@
+const loginContainer = document.querySelector(".login-container");
 
 document.addEventListener('DOMContentLoaded', () => {
     const loginForm = document.getElementById('loginForm');
     const messageDiv = document.getElementById('message');
+
 
     loginForm.addEventListener('submit', async (event) => {
         event.preventDefault(); // Impede o envio padrão do formulário
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('/login', { // Endpoint de login no Flask
+            const response = await fetch('/login', { // Endpoint to Flask
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -47,5 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function showMessage(text, type) {
         messageDiv.textContent = text;
         messageDiv.className = `message ${type}`; // Adiciona a classe 'success' ou 'error'
+        loginContainer.classList.add("shake");
+
+        setTimeout(() => {
+            loginContainer.classList.remove("shake");
+        }, 500);
     }
 });
