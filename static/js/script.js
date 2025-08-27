@@ -43,7 +43,12 @@ async function addTaskToBackend() {
                         headers: {
                         'Content-Type': 'application/json'
                     },
-                        body: JSON.stringify({title: addTaskButton.value, completed: completedUpdate})                                     
+                        body: JSON.stringify({ 
+                            title: addTaskButton.value, 
+                            details: addTaskDetails.value,
+                            taskDeadline: addTaskDeadline.value,
+                            taskDeadlineTime: addTaskDeadlineTime.value
+                        })                                     
                 });
 
                 if (!response.ok) {
@@ -122,7 +127,7 @@ async function listTasks(mode) {
     }
 
 // ============================= updateTask =============================
-async function updateTasks(task_id, status) {
+async function updateTasks(task_id, status, type) {
     try {
 
     let dataToUpdate = {}; 
@@ -141,8 +146,8 @@ async function updateTasks(task_id, status) {
     }); 
 
     if (!response.ok) {
-                // Se a resposta não for OK, tenta ler o erro (que ainda pode não ser JSON se a rota falhou antes)
-        const errorText = await response.text(); // Lê como texto primeiro
+                
+        const errorText = await response.text();
         console.error('Erro HTTP ao atualizar lista:', response.status, errorText);
         throw new Error(`Erro ao atualizar lista: ${response.status} - ${errorText.substring(0, 100)}...`); // Limita para não mostrar HTML completo no erro
     }
@@ -251,6 +256,10 @@ function displayTasks(taskArray) {
             if (item.completed) {
                 taskTitle.style.textDecoration = 'line-through'; 
             }
+            else
+            {
+                taskTitle.style.textDecoration = 'none';
+            }
             
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
@@ -268,13 +277,11 @@ function displayTasks(taskArray) {
 
                 if (isCompleted) {
                     console.log(`Tarefa ${taskId} marcada como concluída.`);
-                    taskTitle.style.textDecoration = 'line-through'; // Risca o texto imediatamente
                     status = true;
                     
 
                 } else {
                     console.log(`Tarefa ${taskId} desmarcada.`);
-                    taskTitle.style.textDecoration = 'none';
                     status = false;
                 }
 

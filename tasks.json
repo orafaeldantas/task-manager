@@ -172,11 +172,11 @@
     },
     {
         "id": 20,
-        "title": "Organizar lista de estudos",
-        "completed": false,
+        "title": "Organizar lista de estudoss",
+        "completed": true,
         "priority": "medium",
         "date": "20/08/2025 - 13:00",
-        "details": "-> Definir horários\n-> Separar materiais",
-        "taskDeadline": "21/08/2025 - 22:00"
+        "details": "-> Definir horários\n-> Separar materiais\n-> Ver os conteúdos mais importantes",
+        "taskDeadline": "28/08/2025 - 17:00"
     }
 ]

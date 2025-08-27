@@ -123,8 +123,8 @@ def add_task():
     if not data or 'title' not in data:
         return jsonify({"error": "O título da tarefa é obrigatório"}), 400
     
-    date_time_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
-    date_time_deadline = date_time_deadline_no_format.strftime('%d/%m/%Y')
+    date_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
+    date_deadline = date_deadline_no_format.strftime('%d/%m/%Y')
 
     if not data['taskDeadlineTime']:
         data['taskDeadlineTime'] = 'Hora não definida'
@@ -137,7 +137,7 @@ def add_task():
         "priority": 'low',
         "date": formatted_date,
         "details": data['details'],
-        "taskDeadline": date_time_deadline + " - " + data['taskDeadlineTime'],
+        "taskDeadline": date_deadline + " - " + data['taskDeadlineTime'],
     }
     tasks.append(new_task)
     save_task(tasks)   
@@ -149,6 +149,14 @@ def add_task():
 def update_task(task_id):
     tasks = load_task()
     data = request.get_json()
+
+    date_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
+    date_deadline = date_deadline_no_format.strftime('%d/%m/%Y')
+
+    if not data['taskDeadlineTime']:
+        data['taskDeadlineTime'] = 'Hora não definida'
+
+
     for task in tasks:
         if task['id'] == task_id:
             if 'title' in data:
@@ -159,7 +167,8 @@ def update_task(task_id):
                 task['priority'] = data['priority']
             if 'details' in data:
                 task['details'] = data['details']
-                print('entrou no details')
+            if 'taskDeadline' in data:
+                task['taskDeadline'] = date_deadline + " - " + data['taskDeadlineTime']
 
             save_task(tasks) 
 
