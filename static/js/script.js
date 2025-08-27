@@ -127,7 +127,7 @@ async function listTasks(mode) {
     }
 
 // ============================= updateTask =============================
-async function updateTasks(task_id, status, type) {
+async function updateTasks(task_id, status) {
     try {
 
     let dataToUpdate = {}; 

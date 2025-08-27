@@ -150,13 +150,6 @@ def update_task(task_id):
     tasks = load_task()
     data = request.get_json()
 
-    date_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
-    date_deadline = date_deadline_no_format.strftime('%d/%m/%Y')
-
-    if not data['taskDeadlineTime']:
-        data['taskDeadlineTime'] = 'Hora não definida'
-
-
     for task in tasks:
         if task['id'] == task_id:
             if 'title' in data:
@@ -168,6 +161,12 @@ def update_task(task_id):
             if 'details' in data:
                 task['details'] = data['details']
             if 'taskDeadline' in data:
+                date_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
+                date_deadline = date_deadline_no_format.strftime('%d/%m/%Y')
+
+                if not data['taskDeadlineTime']:
+                    data['taskDeadlineTime'] = 'Hora não definida'
+               
                 task['taskDeadline'] = date_deadline + " - " + data['taskDeadlineTime']
 
             save_task(tasks) 
