@@ -1,183 +1,182 @@
 [
     {
-      "id": 1,
-      "title": "Pagar contas da casa",
-      "completed": true,
-      "priority": "low",
-      "date": "11/08/2025 - 20:36",
-      "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
-      "taskDeadline": "22/08/2025 - 05:23"
+        "id": 1,
+        "title": "Pagar contas da casa",
+        "completed": true,
+        "priority": "low",
+        "date": "11/08/2025 - 20:36",
+        "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
+        "taskDeadline": "22/08/2025 - 05:23"
     },
     {
-      "id": 2,
-      "title": "Fazer compras no supermercado",
-      "completed": true,
-      "priority": "medium",
-      "date": "12/08/2025 - 09:15",
-      "details": "-> Arroz\n-> Feijão\n-> Frutas\n-> Produtos de limpeza",
-      "taskDeadline": "13/08/2025 - 18:00"
+        "id": 2,
+        "title": "Fazer compras no supermercado",
+        "completed": true,
+        "priority": "medium",
+        "date": "12/08/2025 - 09:15",
+        "details": "-> Arroz\n-> Feijão\n-> Frutas\n-> Produtos de limpeza",
+        "taskDeadline": "13/08/2025 - 18:00"
     },
     {
-      "id": 3,
-      "title": "Estudar Python - Módulo de Classes",
-      "completed": false,
-      "priority": "high",
-      "date": "12/08/2025 - 10:00",
-      "details": "-> Assistir aula online\n-> Fazer exercícios práticos\n-> Revisar exemplos",
-      "taskDeadline": "14/08/2025 - 23:00"
+        "id": 3,
+        "title": "Estudar Python - Módulo de Classes",
+        "completed": false,
+        "priority": "high",
+        "date": "12/08/2025 - 10:00",
+        "details": "-> Assistir aula online\n-> Fazer exercícios práticos\n-> Revisar exemplos",
+        "taskDeadline": "14/08/2025 - 23:00"
     },
     {
-      "id": 4,
-      "title": "Levar o carro para revisão",
-      "completed": false,
-      "priority": "medium",
-      "date": "12/08/2025 - 15:25",
-      "details": "-> Troca de óleo\n-> Revisar freios\n-> Checar pneus",
-      "taskDeadline": "20/08/2025 - 12:00"
+        "id": 4,
+        "title": "Levar o carro para revisão",
+        "completed": false,
+        "priority": "medium",
+        "date": "12/08/2025 - 15:25",
+        "details": "-> Troca de óleo\n-> Revisar freios\n-> Checar pneus",
+        "taskDeadline": "20/08/2025 - 12:00"
     },
     {
-      "id": 5,
-      "title": "Agendar consulta médica",
-      "completed": true,
-      "priority": "high",
-      "date": "13/08/2025 - 08:45",
-      "details": "-> Clínico geral\n-> Verificar disponibilidade no convênio",
-      "taskDeadline": "15/08/2025 - 17:00"
+        "id": 5,
+        "title": "Agendar consulta médica",
+        "completed": true,
+        "priority": "high",
+        "date": "13/08/2025 - 08:45",
+        "details": "-> Clínico geral\n-> Verificar disponibilidade no convênio",
+        "taskDeadline": "15/08/2025 - 17:00"
     },
     {
-      "id": 6,
-      "title": "Fazer exercícios físicos",
-      "completed": false,
-      "priority": "medium",
-      "date": "13/08/2025 - 19:00",
-      "details": "-> Caminhada 30 min\n-> Alongamento",
-      "taskDeadline": "13/08/2025 - 20:00"
+        "id": 6,
+        "title": "Fazer exercícios físicos",
+        "completed": false,
+        "priority": "medium",
+        "date": "13/08/2025 - 19:00",
+        "details": "-> Caminhada 30 min\n-> Alongamento",
+        "taskDeadline": "13/08/2025 - 20:00"
     },
     {
-      "id": 7,
-      "title": "Preparar apresentação do trabalho",
-      "completed": false,
-      "priority": "high",
-      "date": "14/08/2025 - 09:00",
-      "details": "-> Revisar slides\n-> Ensaiar explicação\n-> Revisar dados",
-      "taskDeadline": "16/08/2025 - 09:00"
+        "id": 7,
+        "title": "Preparar apresentação do trabalho",
+        "completed": false,
+        "priority": "high",
+        "date": "14/08/2025 - 09:00",
+        "details": "-> Revisar slides\n-> Ensaiar explicação\n-> Revisar dados",
+        "taskDeadline": "16/08/2025 - 09:00"
     },
     {
-      "id": 8,
-      "title": "Organizar documentos",
-      "completed": true,
-      "priority": "low",
-      "date": "14/08/2025 - 11:30",
-      "details": "-> Separar comprovantes\n-> Guardar recibos",
-      "taskDeadline": "18/08/2025 - 17:30"
+        "id": 8,
+        "title": "Organizar documentos",
+        "completed": true,
+        "priority": "low",
+        "date": "14/08/2025 - 11:30",
+        "details": "-> Separar comprovantes\n-> Guardar recibos",
+        "taskDeadline": "18/08/2025 - 17:30"
     },
     {
-      "id": 9,
-      "title": "Fazer backup do computador",
-      "completed": false,
-      "priority": "medium",
-      "date": "14/08/2025 - 20:00",
-      "details": "-> Fotos\n-> Projetos\n-> Documentos",
-      "taskDeadline": "17/08/2025 - 22:00"
+        "id": 9,
+        "title": "Fazer backup do computador",
+        "completed": false,
+        "priority": "medium",
+        "date": "14/08/2025 - 20:00",
+        "details": "-> Fotos\n-> Projetos\n-> Documentos",
+        "taskDeadline": "17/08/2025 - 22:00"
     },
     {
-      "id": 10,
-      "title": "Ligar para a família",
-      "completed": true,
-      "priority": "low",
-      "date": "15/08/2025 - 18:45",
-      "details": "-> Falar com mãe\n-> Perguntar sobre saúde dos avós",
-      "taskDeadline": "15/08/2025 - 21:00"
+        "id": 10,
+        "title": "Ligar para a família",
+        "completed": true,
+        "priority": "low",
+        "date": "15/08/2025 - 18:45",
+        "details": "-> Falar com mãe\n-> Perguntar sobre saúde dos avós",
+        "taskDeadline": "15/08/2025 - 21:00"
     },
     {
-      "id": 11,
-      "title": "Planejar viagem de fim de semana",
-      "completed": false,
-      "priority": "low",
-      "date": "15/08/2025 - 09:30",
-      "details": "-> Reservar hotel\n-> Definir roteiro",
-      "taskDeadline": "19/08/2025 - 19:00"
+        "id": 11,
+        "title": "Planejar viagem de fim de semana",
+        "completed": false,
+        "priority": "low",
+        "date": "15/08/2025 - 09:30",
+        "details": "-> Reservar hotel\n-> Definir roteiro",
+        "taskDeadline": "19/08/2025 - 19:00"
     },
     {
-      "id": 12,
-      "title": "Assistir aula de Data Science",
-      "completed": true,
-      "priority": "high",
-      "date": "16/08/2025 - 14:00",
-      "details": "-> Estudo de Pandas\n-> Exercícios práticos",
-      "taskDeadline": "16/08/2025 - 18:00"
+        "id": 12,
+        "title": "Assistir aula de Data Science",
+        "completed": true,
+        "priority": "high",
+        "date": "16/08/2025 - 14:00",
+        "details": "-> Estudo de Pandas\n-> Exercícios práticos",
+        "taskDeadline": "16/08/2025 - 18:00"
     },
     {
-      "id": 13,
-      "title": "Arrumar quarto",
-      "completed": true,
-      "priority": "low",
-      "date": "16/08/2025 - 16:00",
-      "details": "-> Guardar roupas\n-> Limpar mesa\n-> Organizar estante",
-      "taskDeadline": "16/08/2025 - 20:00"
+        "id": 13,
+        "title": "Arrumar quarto",
+        "completed": true,
+        "priority": "low",
+        "date": "16/08/2025 - 16:00",
+        "details": "-> Guardar roupas\n-> Limpar mesa\n-> Organizar estante",
+        "taskDeadline": "16/08/2025 - 20:00"
     },
     {
-      "id": 14,
-      "title": "Estudar inglês",
-      "completed": false,
-      "priority": "medium",
-      "date": "17/08/2025 - 07:00",
-      "details": "-> Revisar vocabulário\n-> Fazer exercícios de leitura",
-      "taskDeadline": "17/08/2025 - 22:00"
+        "id": 14,
+        "title": "Estudar inglês",
+        "completed": false,
+        "priority": "medium",
+        "date": "17/08/2025 - 07:00",
+        "details": "-> Revisar vocabulário\n-> Fazer exercícios de leitura",
+        "taskDeadline": "17/08/2025 - 22:00"
     },
     {
-      "id": 15,
-      "title": "Limpar cozinha",
-      "completed": true,
-      "priority": "low",
-      "date": "17/08/2025 - 10:00",
-      "details": "-> Lavar louça\n-> Limpar fogão\n-> Passar pano no chão",
-      "taskDeadline": "17/08/2025 - 13:00"
+        "id": 15,
+        "title": "Limpar cozinha",
+        "completed": true,
+        "priority": "low",
+        "date": "17/08/2025 - 10:00",
+        "details": "-> Lavar louça\n-> Limpar fogão\n-> Passar pano no chão",
+        "taskDeadline": "17/08/2025 - 13:00"
     },
     {
-      "id": 16,
-      "title": "Atualizar currículo",
-      "completed": false,
-      "priority": "high",
-      "date": "18/08/2025 - 15:00",
-      "details": "-> Inserir novos cursos\n-> Revisar experiências",
-      "taskDeadline": "19/08/2025 - 23:00"
+        "id": 16,
+        "title": "Atualizar currículo",
+        "completed": false,
+        "priority": "high",
+        "date": "18/08/2025 - 15:00",
+        "details": "-> Inserir novos cursos\n-> Revisar experiências",
+        "taskDeadline": "19/08/2025 - 23:00"
     },
     {
-      "id": 17,
-      "title": "Estudar algoritmos",
-      "completed": false,
-      "priority": "high",
-      "date": "18/08/2025 - 20:00",
-      "details": "-> Resolver exercícios de grafos\n-> Revisar estruturas de dados",
-      "taskDeadline": "20/08/2025 - 22:00"
+        "id": 17,
+        "title": "Estudar algoritmos",
+        "completed": false,
+        "priority": "high",
+        "date": "18/08/2025 - 20:00",
+        "details": "-> Resolver exercícios de grafos\n-> Revisar estruturas de dados",
+        "taskDeadline": "20/08/2025 - 22:00"
     },
     {
-      "id": 18,
-      "title": "Ler livro de ficção científica",
-      "completed": false,
-      "priority": "low",
-      "date": "19/08/2025 - 21:00",
-      "details": "-> Continuar leitura de Isaac Asimov",
-      "taskDeadline": "30/08/2025 - 23:59"
+        "id": 18,
+        "title": "Ler livro de ficção científica",
+        "completed": false,
+        "priority": "low",
+        "date": "19/08/2025 - 21:00",
+        "details": "-> Continuar leitura de Isaac Asimov",
+        "taskDeadline": "30/08/2025 - 23:59"
     },
     {
-      "id": 19,
-      "title": "Cuidar das plantas",
-      "completed": true,
-      "priority": "low",
-      "date": "19/08/2025 - 08:00",
-      "details": "-> Regar vasos\n-> Adubar plantas",
-      "taskDeadline": "19/08/2025 - 09:00"
+        "id": 19,
+        "title": "Cuidar das plantas",
+        "completed": true,
+        "priority": "low",
+        "date": "19/08/2025 - 08:00",
+        "details": "-> Regar vasos\n-> Adubar plantas",
+        "taskDeadline": "19/08/2025 - 09:00"
     },
     {
-      "id": 20,
-      "title": "Organizar lista de estudos",
-      "completed": false,
-      "priority": "medium",
-      "date": "20/08/2025 - 13:00",
-      "details": "-> Definir horários\n-> Separar materiais",
-      "taskDeadline": "21/08/2025 - 22:00"
+        "id": 20,
+        "title": "Organizar lista de estudos",
+        "completed": false,
+        "priority": "medium",
+        "date": "20/08/2025 - 13:00",
+        "details": "-> Definir horários\n-> Separar materiais",
+        "taskDeadline": "21/08/2025 - 22:00"
     }
-  ]
-  
+]
