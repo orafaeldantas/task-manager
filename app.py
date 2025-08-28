@@ -25,10 +25,9 @@ USERS = {
 # ========================== LOGIN ==========================
 
 def login_required(f):
-    @wraps(f) # Isso é importante para que o decorador preserve o nome e docstring da função original
+    @wraps(f) # To keep the original data
     def decorated_function(*args, **kwargs):
         if 'logged_in' not in session or not session['logged_in']:
-            # Se o usuário não está logado, redireciona para a página de login
             return redirect(url_for('login'))
         return f(*args, **kwargs) # Se estiver logado, executa a função da rota
     return decorated_function
@@ -80,10 +79,9 @@ def load_task():
     with open(TASKS, 'r', encoding='utf-8') as f:
         try:
             return json.load(f)
-        except json.JSONDecodeError: # Lida com arquivo JSON vazio ou mal formatado
+        except json.JSONDecodeError: # Empty or poorly formatted JSON
             return []
 
-# Função para salvar o histórico no arquivo JSON
 def save_task(tasks):
      with open(TASKS, 'w', encoding='utf-8') as f:
         json.dump(tasks, f, indent=4, ensure_ascii=False)
@@ -141,7 +139,7 @@ def add_task():
     }
     tasks.append(new_task)
     save_task(tasks)   
-    return jsonify(new_task), 201 # 201 Created
+    return jsonify(new_task), 201 
 
 # === UPDATE TASK ===
 @login_required
@@ -219,6 +217,6 @@ def get_tasks_by_mode(mode):
 
 
 if __name__ == '__main__':
-    app.run(debug=True) # debug=True reinicia o servidor automaticamente em caso de mudanças
+    app.run(debug=True)
 
 

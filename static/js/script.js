@@ -132,7 +132,7 @@ async function updateTasks(task_id, status) {
 
     let dataToUpdate = {}; 
 
-    if (status === true || status === false) { 
+    if (status == true || status == false) { 
         dataToUpdate = { completed: status };
     } else {
         dataToUpdate = { priority: status };
