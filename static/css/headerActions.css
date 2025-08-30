@@ -76,3 +76,10 @@
   padding: 10px;
 }
 
+.div-btn {
+  display: flex;
+  flex-direction: column; /* Alinha os itens verticalmente */
+  gap: 15px; /* Adiciona 15px de espaço entre os botões */
+  align-items: center; /* Centraliza os botões horizontalmente */
+}
+
