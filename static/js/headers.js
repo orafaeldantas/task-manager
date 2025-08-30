@@ -50,10 +50,52 @@ function showPerfil(username){
         
     divSlave.appendChild(userImage);
     divSlave.appendChild(usernameText);
-        
+
+
+   // ==== Settings Button ===
+    const divBtn = document.createElement('div');
+    
+    const btnSettings = document.createElement('button');
+
+    btnSettings.id = 'btn-settings';
+    btnSettings.title = 'Configurações';
+
+    btnSettings.addEventListener('click', () => {
+        alert('Abrir configurações!');
+    });
+
+    const img = document.createElement('img');
+    img.src = '/static/assets/svg/settings.svg';
+
+    btnSettings.append(img);
+
+    divBtn.appendChild(btnSettings);
+
+    // === Logout Button ===
+
+    const btnLogout = document.createElement('button');
+
+    btnLogout.id = 'btn-logout';
+    btnLogout.title = 'Logout';
+
+    btnLogout.addEventListener('click', () => {
+        // A função finishSession() será executada quando o botão for clicado.
+        // Certifique-se de que essa função já está definida em outro lugar do seu código.
+        finishSession();
+    });
+
+    const imgLogout = document.createElement('img');
+
+    imgLogout.src = '/static/assets/svg/logout.svg';
+
+    btnLogout.append(imgLogout);
+
+    divBtn.appendChild(btnLogout);
+    
+
+    divSlave.appendChild(divBtn);
 
     divMaster.appendChild(divSlave);
-
 
     addClickOutsideListener(divSlave);
 
