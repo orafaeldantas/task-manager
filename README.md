@@ -49,7 +49,7 @@ python app.py
 
 Abra http://127.0.0.1:5000 no navegador e explore o projeto.
 
-#########################
+---
 
 Se você encontrar bugs, tiver sugestões ou quiser melhorar o código, abra uma issue ou envie um pull request. Todo feedback é muito bem-vindo!
 
