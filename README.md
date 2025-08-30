@@ -8,7 +8,7 @@ Bem-vindo(a) ao projeto **Lista de Tarefas**! Este é um espaço pensado para te
 
 ## ✨ Funcionalidades
 
-- **Autenticação de Usuário:** Crie sua conta ou use login social (Google/GitHub) para manter suas tarefas seguras.  
+- **Autenticação de Usuário:** Crie sua conta ou use login social (Google/GitHub) para manter suas tarefas seguras. (Em desenvolvimento!) 
 - **Adicionar, Editar e Excluir Tarefas:** Controle total sobre suas tarefas, adicionando novas, modificando ou removendo o que já foi concluído.  
 - **Prioridades:** Marque tarefas importantes com prioridade (A, B, C) e foque no que realmente importa.  
 - **Status de Tarefa:** Mantenha suas tarefas organizadas e saiba rapidamente o que está ativo ou concluído.  
