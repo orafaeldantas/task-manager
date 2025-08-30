@@ -54,11 +54,13 @@ function showPerfil(username){
 
    // ==== Settings Button ===
     const divBtn = document.createElement('div');
+    divBtn.className ="div-btn"
     
     const btnSettings = document.createElement('button');
 
     btnSettings.id = 'btn-settings';
     btnSettings.title = 'Configurações';
+    btnSettings.className = 'btnSettings';
 
     btnSettings.addEventListener('click', () => {
         alert('Abrir configurações!');
@@ -68,6 +70,7 @@ function showPerfil(username){
     img.src = '/static/assets/svg/settings.svg';
 
     btnSettings.append(img);
+    btnSettings.append('Configurações');
 
     divBtn.appendChild(btnSettings);
 
@@ -77,6 +80,8 @@ function showPerfil(username){
 
     btnLogout.id = 'btn-logout';
     btnLogout.title = 'Logout';
+    btnLogout.className = 'btnLogout';
+    
 
     btnLogout.addEventListener('click', () => {
         // A função finishSession() será executada quando o botão for clicado.
@@ -89,9 +94,11 @@ function showPerfil(username){
     imgLogout.src = '/static/assets/svg/logout.svg';
 
     btnLogout.append(imgLogout);
+    btnLogout.append('Sair');
 
     divBtn.appendChild(btnLogout);
     
+
 
     divSlave.appendChild(divBtn);
 

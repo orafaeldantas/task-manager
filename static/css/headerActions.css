@@ -79,7 +79,13 @@
 .div-btn {
   display: flex;
   flex-direction: column; /* Alinha os itens verticalmente */
-  gap: 15px; /* Adiciona 15px de espaço entre os botões */
+  gap: 8px; /* Adiciona 15px de espaço entre os botões */
   align-items: center; /* Centraliza os botões horizontalmente */
+  margin-top: 90px;
+}
+
+.btnLogout, .btnSettings {
+  gap: 8px;
+  width: 150px;
 }
 
