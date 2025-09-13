@@ -86,14 +86,6 @@ def save_task(tasks):
      with open(TASKS, 'w', encoding='utf-8') as f:
         json.dump(tasks, f, indent=4, ensure_ascii=False)
 
-""" 
-@app.route('/')
-def home():
-    tasks = load_task()
-    #return render_template("index.html", tasks=tasks[::-1])
-    return send_from_directory(STATIC_FOLDER, 'login.html')
-"""
-
 # === GET TASKS ===
 @login_required
 @app.route('/tasks', methods=['GET'])
