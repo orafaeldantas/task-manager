@@ -38,9 +38,9 @@ class TaskManager:
         self.tasks = self.load_tasks()
 
     def load_tasks(self):
-        if not self.file.exists(TASKS):
+        if not self.file.exists():
             return []
-        with open(TASKS, 'r', encoding='utf-8') as f:
+        with open(self.file, 'r', encoding='utf-8') as f:
             try:
                 return json.load(f)
             except json.JSONDecodeError: # Empty or poorly formatted JSON
