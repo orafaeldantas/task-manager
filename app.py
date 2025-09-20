@@ -2,20 +2,23 @@
 from flask import Flask, request, jsonify, render_template, send_from_directory, url_for, redirect, session, flash
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
+from models import TaskManager
 import os
 import json
 import datetime
 import secrets
+
 
 secret_key_string = secrets.token_urlsafe(32)
 
 app = Flask(__name__)
 app.secret_key = secret_key_string
 
+task_manager = TaskManager()
+
 STATIC_FOLDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 
 TASKS = 'tasks.json'
-task_id_counter = 1
 
 USERS = {
     'usuario': generate_password_hash('senha123'),
@@ -90,48 +93,24 @@ def save_task(tasks):
 @login_required
 @app.route('/tasks', methods=['GET'])
 def get_tasks():
-    tasks = load_task()
+    tasks = task_manager.load_tasks()
     return jsonify(tasks[::-1])
 
 # === CREATE TASK ===
 @login_required
 @app.route('/tasks', methods=['POST'])
 def add_task():
-    tasks = load_task()
-    global task_id_counter
     data = request.get_json()
-    date = datetime.datetime.now()
-    formatted_date = date.strftime("%d/%m/%Y - %H:%M ")
-
-
-    if tasks == []:
-        task_id_counter = 0
-    else:
-        task_id_counter = int(tasks[-1]['id'])
-
-
-    if not data or 'title' not in data:
+    if not data or "title" not in data:
         return jsonify({"error": "O título da tarefa é obrigatório"}), 400
-    
-    date_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
-    date_deadline = date_deadline_no_format.strftime('%d/%m/%Y')
 
-    if not data['taskDeadlineTime']:
-        data['taskDeadlineTime'] = 'Hora não definida'
-
-    task_id_counter += 1
-    new_task = {
-        "id": task_id_counter,
-        "title": data['title'],
-        "completed": False,
-        "priority": 'low',
-        "date": formatted_date,
-        "details": data['details'],
-        "taskDeadline": date_deadline + " - " + data['taskDeadlineTime'],
-    }
-    tasks.append(new_task)
-    save_task(tasks)   
-    return jsonify(new_task), 201 
+    new_task = task_manager.add_task(
+        title=data["title"],
+        details=data["details"],
+        taskDeadline=data["taskDeadline"],
+        taskDeadlineTime=data.get("taskDeadlineTime")
+    )
+    return jsonify(new_task), 201    
 
 # === UPDATE TASK ===
 @login_required
