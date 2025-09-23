@@ -67,3 +67,25 @@ class TaskManager:
         self.tasks.append(task_dict)
         self.save_tasks()
         return task_dict
+
+    def get_task(self, task_id):
+        return next((t for t in self.tasks if t["id"] == task_id), None) 
+    
+    def list_tasks(self):
+        return self.tasks
+    
+    def update_task(self, task_id, updates):
+        task = self.get_task(task_id)
+        if not task:
+            return None
+        task.update(updates)
+        self.save_tasks()
+        return task
+    
+    def delete_task(self, task_id):
+        task = self.get_task(task_id)
+        if not task:
+            return False
+        self.tasks.remove(task)
+        self.save_tasks()
+        return True    

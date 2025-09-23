@@ -38,7 +38,7 @@ def login_required(f):
 @app.route('/')
 def index():
     if 'logged_in' in session and session['logged_in']:
-        tasks = load_task()
+        tasks = task_manager.load_tasks()
         #return send_from_directory(STATIC_FOLDER, 'index.html')
         return render_template('index.html')
     return redirect(url_for('login'))
@@ -69,25 +69,13 @@ def logout():
 
 # ===========================================================
 
+# === GET USERNAME ===
 @login_required
 @app.route('/get-user-name', methods=['GET'])
 def getUsername():
     username = session.get('username')
     print(username)
     return jsonify({'name': username}), 200
-
-def load_task():
-    if not os.path.exists(TASKS):
-        return []
-    with open(TASKS, 'r', encoding='utf-8') as f:
-        try:
-            return json.load(f)
-        except json.JSONDecodeError: # Empty or poorly formatted JSON
-            return []
-
-def save_task(tasks):
-     with open(TASKS, 'w', encoding='utf-8') as f:
-        json.dump(tasks, f, indent=4, ensure_ascii=False)
 
 # === GET TASKS ===
 @login_required
@@ -116,51 +104,30 @@ def add_task():
 @login_required
 @app.route('/tasks/<int:task_id>', methods=['PUT'])
 def update_task(task_id):
-    tasks = load_task()
     data = request.get_json()
+    updated_task = task_manager.update_task(task_id, data)
 
-    for task in tasks:
-        if task['id'] == task_id:
-            if 'title' in data:
-                task['title'] = data['title']
-            if 'completed' in data:
-                task['completed'] = data['completed']
-            if 'priority' in data:
-                task['priority'] = data['priority']
-            if 'details' in data:
-                task['details'] = data['details']
-            if 'taskDeadline' in data:
-                date_deadline_no_format = datetime.datetime.strptime(data['taskDeadline'], '%Y-%m-%d')
-                date_deadline = date_deadline_no_format.strftime('%d/%m/%Y')
-
-                if not data['taskDeadlineTime']:
-                    data['taskDeadlineTime'] = 'Hora não definida'
-               
-                task['taskDeadline'] = date_deadline + " - " + data['taskDeadlineTime']
-
-            save_task(tasks) 
-
-            return jsonify(task)
-        
-    return jsonify({"error": "Tarefa não encontrada"}), 404
+    if not updated_task:  
+        return jsonify({"error": "Tarefa não encontrada"}), 404
+    
+    return jsonify(updated_task), 200
 
 # === DELETE TASK ===
 @login_required
 @app.route('/tasks/<int:task_id>', methods=['DELETE'])
-def delete_task(task_id):
-    tasks = load_task()
-    new_list_task = []
-    for task in tasks:
-        if task['id'] != task_id:
-            new_list_task.append(task)
-    save_task(new_list_task)
-    return jsonify({"message": "Tarefa excluída com sucesso"}), 200
+def delete_task(task_id):   
+    deleted = task_manager.delete_task(task_id)
+
+    if not deleted:
+        return jsonify({"error": "Tarefa não encontrada"}), 404
+    
+    return jsonify({"message": "Tarefa removida com sucesso!"}), 200
 
 # === EDIT TASK ===
 @login_required
 @app.route('/tasks/<int:task_id>/edit', methods=['GET'])
 def edit_task(task_id):
-    tasks = load_task()
+    tasks = task_manager.load_tasks()
     for task in tasks:
         if task['id'] == task_id:      
             return jsonify(task), 200
@@ -168,13 +135,11 @@ def edit_task(task_id):
 @login_required
 @app.route('/tasks/<string:mode>', methods=['GET'])
 def get_tasks_by_mode(mode):
-    tasks = load_task()
+    tasks = task_manager.load_tasks()
 
     if mode == 'active':
-        tasks = load_task()
         new_list = [task for task in tasks if not task['completed']]
     elif mode == 'completed':
-        tasks = load_task()
         new_list = [task for task in tasks if task['completed']]
     else:
         highPriority = list(filter(lambda x: x['priority'] == 'high', tasks))

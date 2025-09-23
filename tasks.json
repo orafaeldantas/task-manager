@@ -5,7 +5,7 @@
         "completed": true,
         "priority": "low",
         "date": "11/08/2025 - 20:36",
-        "details": "-> Conta de luz\n-> Conta de água\n-> Aluguel",
+        "details": "-> Conta de luz\n-> Conta de \u00e1gua\n-> Aluguel",
         "taskDeadline": "22/08/2025 - 05:23"
     },
     {
@@ -14,39 +14,39 @@
         "completed": true,
         "priority": "medium",
         "date": "12/08/2025 - 09:15",
-        "details": "-> Arroz\n-> Feijão\n-> Frutas\n-> Produtos de limpeza",
+        "details": "-> Arroz\n-> Feij\u00e3o\n-> Frutas\n-> Produtos de limpeza",
         "taskDeadline": "13/08/2025 - 18:00"
     },
     {
         "id": 3,
-        "title": "Estudar Python - Módulo de Classes",
+        "title": "Estudar Python - M\u00f3dulo de Classes",
         "completed": false,
         "priority": "high",
         "date": "12/08/2025 - 10:00",
-        "details": "-> Assistir aula online\n-> Fazer exercícios práticos\n-> Revisar exemplos",
+        "details": "-> Assistir aula online\n-> Fazer exerc\u00edcios pr\u00e1ticos\n-> Revisar exemplos",
         "taskDeadline": "14/08/2025 - 23:00"
     },
     {
         "id": 4,
-        "title": "Levar o carro para revisão",
+        "title": "Levar o carro para revis\u00e3o",
         "completed": false,
         "priority": "medium",
         "date": "12/08/2025 - 15:25",
-        "details": "-> Troca de óleo\n-> Revisar freios\n-> Checar pneus",
+        "details": "-> Troca de \u00f3leo\n-> Revisar freios\n-> Checar pneus",
         "taskDeadline": "20/08/2025 - 12:00"
     },
     {
         "id": 5,
-        "title": "Agendar consulta médica",
+        "title": "Agendar consulta m\u00e9dica",
         "completed": true,
         "priority": "high",
         "date": "13/08/2025 - 08:45",
-        "details": "-> Clínico geral\n-> Verificar disponibilidade no convênio",
+        "details": "-> Cl\u00ednico geral\n-> Verificar disponibilidade no conv\u00eanio",
         "taskDeadline": "15/08/2025 - 17:00"
     },
     {
         "id": 6,
-        "title": "Fazer exercícios físicos",
+        "title": "Fazer exerc\u00edcios f\u00edsicos",
         "completed": false,
         "priority": "medium",
         "date": "13/08/2025 - 19:00",
@@ -55,11 +55,11 @@
     },
     {
         "id": 7,
-        "title": "Preparar apresentação do trabalho",
+        "title": "Preparar apresenta\u00e7\u00e3o do trabalho",
         "completed": false,
         "priority": "high",
         "date": "14/08/2025 - 09:00",
-        "details": "-> Revisar slides\n-> Ensaiar explicação\n-> Revisar dados",
+        "details": "-> Revisar slides\n-> Ensaiar explica\u00e7\u00e3o\n-> Revisar dados",
         "taskDeadline": "16/08/2025 - 09:00"
     },
     {
@@ -82,11 +82,11 @@
     },
     {
         "id": 10,
-        "title": "Ligar para a família",
+        "title": "Ligar para a fam\u00edlia",
         "completed": true,
         "priority": "low",
         "date": "15/08/2025 - 18:45",
-        "details": "-> Falar com mãe\n-> Perguntar sobre saúde dos avós",
+        "details": "-> Falar com m\u00e3e\n-> Perguntar sobre sa\u00fade dos av\u00f3s",
         "taskDeadline": "15/08/2025 - 21:00"
     },
     {
@@ -104,7 +104,7 @@
         "completed": true,
         "priority": "high",
         "date": "16/08/2025 - 14:00",
-        "details": "-> Estudo de Pandas\n-> Exercícios práticos",
+        "details": "-> Estudo de Pandas\n-> Exerc\u00edcios pr\u00e1ticos",
         "taskDeadline": "16/08/2025 - 18:00"
     },
     {
@@ -118,11 +118,11 @@
     },
     {
         "id": 14,
-        "title": "Estudar inglês",
+        "title": "Estudar ingl\u00eas",
         "completed": false,
         "priority": "medium",
         "date": "17/08/2025 - 07:00",
-        "details": "-> Revisar vocabulário\n-> Fazer exercícios de leitura",
+        "details": "-> Revisar vocabul\u00e1rio\n-> Fazer exerc\u00edcios de leitura",
         "taskDeadline": "17/08/2025 - 22:00"
     },
     {
@@ -131,16 +131,16 @@
         "completed": true,
         "priority": "low",
         "date": "17/08/2025 - 10:00",
-        "details": "-> Lavar louça\n-> Limpar fogão\n-> Passar pano no chão",
+        "details": "-> Lavar lou\u00e7a\n-> Limpar fog\u00e3o\n-> Passar pano no ch\u00e3o",
         "taskDeadline": "17/08/2025 - 13:00"
     },
     {
         "id": 16,
-        "title": "Atualizar currículo",
+        "title": "Atualizar curr\u00edculo",
         "completed": false,
         "priority": "high",
         "date": "18/08/2025 - 15:00",
-        "details": "-> Inserir novos cursos\n-> Revisar experiências",
+        "details": "-> Inserir novos cursos\n-> Revisar experi\u00eancias",
         "taskDeadline": "19/08/2025 - 23:00"
     },
     {
@@ -149,12 +149,12 @@
         "completed": false,
         "priority": "high",
         "date": "18/08/2025 - 20:00",
-        "details": "-> Resolver exercícios de grafos\n-> Revisar estruturas de dados",
+        "details": "-> Resolver exerc\u00edcios de grafos\n-> Revisar estruturas de dados",
         "taskDeadline": "20/08/2025 - 22:00"
     },
     {
         "id": 18,
-        "title": "Ler livro de ficção científica",
+        "title": "Ler livro de fic\u00e7\u00e3o cient\u00edfica",
         "completed": false,
         "priority": "low",
         "date": "19/08/2025 - 21:00",
@@ -176,7 +176,8 @@
         "completed": false,
         "priority": "low",
         "date": "20/08/2025 - 13:00",
-        "details": "-> Definir horários\n-> Separar materiais\n-> Ver os conteúdos mais importantes",
-        "taskDeadline": "28/08/2025 - 17:00"
+        "details": "-> Definir hor\u00e1rios\n-> Separar materiais\n-> Ver os conte\u00fados mais importantess",
+        "taskDeadline": "2025-08-28",
+        "taskDeadlineTime": "17:00"
     }
 ]
