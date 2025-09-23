@@ -127,10 +127,8 @@ def delete_task(task_id):
 @login_required
 @app.route('/tasks/<int:task_id>/edit', methods=['GET'])
 def edit_task(task_id):
-    tasks = task_manager.load_tasks()
-    for task in tasks:
-        if task['id'] == task_id:      
-            return jsonify(task), 200
+    task = task_manager.get_task(task_id) 
+    return jsonify(task), 200
 
 @login_required
 @app.route('/tasks/<string:mode>', methods=['GET'])

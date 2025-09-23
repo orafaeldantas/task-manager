@@ -169,15 +169,5 @@
         "date": "19/08/2025 - 08:00",
         "details": "-> Regar vasos\n-> Adubar plantas",
         "taskDeadline": "19/08/2025 - 09:00"
-    },
-    {
-        "id": 20,
-        "title": "Organizar lista de estudoss",
-        "completed": false,
-        "priority": "low",
-        "date": "20/08/2025 - 13:00",
-        "details": "-> Definir hor\u00e1rios\n-> Separar materiais\n-> Ver os conte\u00fados mais importantess",
-        "taskDeadline": "2025-08-28",
-        "taskDeadlineTime": "17:00"
     }
 ]
