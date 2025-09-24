@@ -164,8 +164,8 @@
     {
         "id": 19,
         "title": "Cuidar das plantas",
-        "completed": true,
-        "priority": "low",
+        "completed": false,
+        "priority": "medium",
         "date": "19/08/2025 - 08:00",
         "details": "-> Regar vasos\n-> Adubar plantas",
         "taskDeadline": "19/08/2025 - 09:00"

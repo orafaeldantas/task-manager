@@ -36,6 +36,7 @@ class TaskManager:
     def __init__(self, filename="tasks.json"):
         self.file = Path(filename)
         self.tasks = self.load_tasks()
+        self.task_id_counter = self.get_last_id()
 
     def load_tasks(self):
         if not self.file.exists():
@@ -50,14 +51,14 @@ class TaskManager:
         with open(self.file, "w") as f:
             json.dump(self.tasks, f, indent=4)
 
-    def next_id(self):
+    def get_last_id(self):
         if not self.tasks:
-            return 1
-        return int(self.tasks[-1]["id"]) + 1
+            return 0
+        return max(task["id"] for task in self.tasks)
 
     def add_task(self, title, details, taskDeadline, taskDeadlineTime):
         task = Task(
-            id=self.next_id(),
+            id=self.task_id_counter+1,
             title=title,
             details=details,
             taskDeadline=taskDeadline,
