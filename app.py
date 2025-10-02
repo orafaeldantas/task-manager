@@ -134,16 +134,24 @@ def edit_task(task_id):
 def get_tasks_by_mode(mode):
     tasks = task_manager.load_tasks()
 
+    priority_key = {2:'high', 1:'medium', 0:'low'}
+    new_list = []
+
     if mode == 'active':
         new_list = [task for task in tasks if not task['completed']]
     elif mode == 'completed':
         new_list = [task for task in tasks if task['completed']]
     else:
-        highPriority = list(filter(lambda x: x['priority'] == 'high', tasks))
-        mediumPriority = list(filter(lambda x: x['priority'] == 'medium', tasks))
-        lowPriority = list(filter(lambda x: x['priority'] == 'low', tasks))
+        # highPriority = list(filter(lambda x: x['priority'] == 'high', tasks))
+        # mediumPriority = list(filter(lambda x: x['priority'] == 'medium', tasks))
+        # lowPriority = list(filter(lambda x: x['priority'] == 'low', tasks))
 
-        new_list = [*lowPriority, *mediumPriority, *highPriority]
+        # new_list = [*lowPriority, *mediumPriority, *highPriority]
+
+        for t in range(0, 3):
+            for task in tasks:
+                if task['priority'] == priority_key[t]:
+                    new_list.append(task)
 
     
     return jsonify(new_list[::-1]), 200
